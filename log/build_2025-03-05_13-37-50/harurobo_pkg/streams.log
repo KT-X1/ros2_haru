@@ -1,0 +1,24 @@
+[1.013s] Invoking command in '/home/taichi/ros2/src/harurobo_pkg': PYTHONPATH=/home/taichi/ros2/build/harurobo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/harurobo_pkg build --build-base /home/taichi/ros2/build/harurobo_pkg/build install --record /home/taichi/ros2/build/harurobo_pkg/install.log --single-version-externally-managed install_data
+[1.411s] running egg_info
+[1.413s] writing ../../build/harurobo_pkg/harurobo_pkg.egg-info/PKG-INFO
+[1.414s] writing dependency_links to ../../build/harurobo_pkg/harurobo_pkg.egg-info/dependency_links.txt
+[1.414s] writing entry points to ../../build/harurobo_pkg/harurobo_pkg.egg-info/entry_points.txt
+[1.414s] writing requirements to ../../build/harurobo_pkg/harurobo_pkg.egg-info/requires.txt
+[1.414s] writing top-level names to ../../build/harurobo_pkg/harurobo_pkg.egg-info/top_level.txt
+[1.417s] reading manifest file '../../build/harurobo_pkg/harurobo_pkg.egg-info/SOURCES.txt'
+[1.418s] writing manifest file '../../build/harurobo_pkg/harurobo_pkg.egg-info/SOURCES.txt'
+[1.419s] running build
+[1.419s] running build_py
+[1.419s] running install
+[1.420s] running install_lib
+[1.422s] running install_data
+[1.422s] running install_egg_info
+[1.425s] removing '/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.425s] Copying ../../build/harurobo_pkg/harurobo_pkg.egg-info to /home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info
+[1.426s] running install_scripts
+[1.456s] Installing planning_node script to /home/taichi/ros2/install/harurobo_pkg/lib/harurobo_pkg
+[1.456s] Installing serial_receive_node script to /home/taichi/ros2/install/harurobo_pkg/lib/harurobo_pkg
+[1.456s] Installing serial_send_node script to /home/taichi/ros2/install/harurobo_pkg/lib/harurobo_pkg
+[1.457s] Installing web_socket_node script to /home/taichi/ros2/install/harurobo_pkg/lib/harurobo_pkg
+[1.457s] writing list of installed files to '/home/taichi/ros2/build/harurobo_pkg/install.log'
+[1.492s] Invoked command in '/home/taichi/ros2/src/harurobo_pkg' returned '0': PYTHONPATH=/home/taichi/ros2/build/harurobo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/harurobo_pkg build --build-base /home/taichi/ros2/build/harurobo_pkg/build install --record /home/taichi/ros2/build/harurobo_pkg/install.log --single-version-externally-managed install_data

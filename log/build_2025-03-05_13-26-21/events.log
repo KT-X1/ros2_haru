@@ -1,0 +1,47 @@
+[0.000000] (-) TimerEvent: {}
+[0.000693] (harurobo_pkg) JobQueued: {'identifier': 'harurobo_pkg', 'dependencies': OrderedDict()}
+[0.000764] (harurobo_pkg) JobStarted: {'identifier': 'harurobo_pkg'}
+[0.098894] (-) TimerEvent: {}
+[0.199303] (-) TimerEvent: {}
+[0.299669] (-) TimerEvent: {}
+[0.400023] (-) TimerEvent: {}
+[0.500388] (-) TimerEvent: {}
+[0.600764] (-) TimerEvent: {}
+[0.701133] (-) TimerEvent: {}
+[0.801492] (-) TimerEvent: {}
+[0.901856] (-) TimerEvent: {}
+[1.002240] (-) TimerEvent: {}
+[1.046656] (harurobo_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/harurobo_pkg', 'build', '--build-base', '/home/taichi/ros2/build/harurobo_pkg/build', 'install', '--record', '/home/taichi/ros2/build/harurobo_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/taichi/ros2/src/harurobo_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'HTTPS_PROXY': 'http://proxy2.maizuru-ct.ac.jp:8090/', 'no_proxy': '', 'LANGUAGE': 'ja:en', 'USER': 'taichi', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/taichi', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': '', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ja_JP.UTF-8', 'SYSTEMD_EXEC_PID': '3055', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'https_proxy': 'http://proxy2.maizuru-ct.ac.jp:8090/', 'COLCON_PREFIX_PATH': '/home/taichi/ros2/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'taichi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'taichi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/taichi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/CROSSZ:@/tmp/.ICE-unix/2246,unix/CROSSZ:/tmp/.ICE-unix/2246', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ja_JP.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0913d9fd_ffed_414e_bf9a_529cbde7bcdf', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'ja_JP.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R7UO22', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.103', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/taichi/ros2/install/harurobo_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/taichi/ros2/build/harurobo_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/taichi/ros2/build/harurobo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages:/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.102357] (-) TimerEvent: {}
+[1.202739] (-) TimerEvent: {}
+[1.303090] (-) TimerEvent: {}
+[1.403475] (-) TimerEvent: {}
+[1.451447] (harurobo_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.454151] (harurobo_pkg) StdoutLine: {'line': b'writing ../../build/harurobo_pkg/harurobo_pkg.egg-info/PKG-INFO\n'}
+[1.454511] (harurobo_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/harurobo_pkg/harurobo_pkg.egg-info/dependency_links.txt\n'}
+[1.454877] (harurobo_pkg) StdoutLine: {'line': b'writing entry points to ../../build/harurobo_pkg/harurobo_pkg.egg-info/entry_points.txt\n'}
+[1.455118] (harurobo_pkg) StdoutLine: {'line': b'writing requirements to ../../build/harurobo_pkg/harurobo_pkg.egg-info/requires.txt\n'}
+[1.455349] (harurobo_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/harurobo_pkg/harurobo_pkg.egg-info/top_level.txt\n'}
+[1.458127] (harurobo_pkg) StdoutLine: {'line': b"reading manifest file '../../build/harurobo_pkg/harurobo_pkg.egg-info/SOURCES.txt'\n"}
+[1.459399] (harurobo_pkg) StdoutLine: {'line': b"writing manifest file '../../build/harurobo_pkg/harurobo_pkg.egg-info/SOURCES.txt'\n"}
+[1.459679] (harurobo_pkg) StdoutLine: {'line': b'running build\n'}
+[1.459794] (harurobo_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.460093] (harurobo_pkg) StdoutLine: {'line': b'copying harurobo_pkg/web_socket_node.py -> /home/taichi/ros2/build/harurobo_pkg/build/lib/harurobo_pkg\n'}
+[1.460886] (harurobo_pkg) StdoutLine: {'line': b'running install\n'}
+[1.461608] (harurobo_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.463051] (harurobo_pkg) StdoutLine: {'line': b'copying /home/taichi/ros2/build/harurobo_pkg/build/lib/harurobo_pkg/web_socket_node.py -> /home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg\n'}
+[1.464341] (harurobo_pkg) StdoutLine: {'line': b'byte-compiling /home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/web_socket_node.py to web_socket_node.cpython-310.pyc\n'}
+[1.466266] (harurobo_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.466521] (harurobo_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.469743] (harurobo_pkg) StdoutLine: {'line': b"removing '/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.470362] (harurobo_pkg) StdoutLine: {'line': b'Copying ../../build/harurobo_pkg/harurobo_pkg.egg-info to /home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info\n'}
+[1.472002] (harurobo_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.499559] (harurobo_pkg) StdoutLine: {'line': b'Installing planning_node script to /home/taichi/ros2/install/harurobo_pkg/lib/harurobo_pkg\n'}
+[1.499859] (harurobo_pkg) StdoutLine: {'line': b'Installing serial_receive_node script to /home/taichi/ros2/install/harurobo_pkg/lib/harurobo_pkg\n'}
+[1.500051] (harurobo_pkg) StdoutLine: {'line': b'Installing serial_send_node script to /home/taichi/ros2/install/harurobo_pkg/lib/harurobo_pkg\n'}
+[1.500306] (harurobo_pkg) StdoutLine: {'line': b'Installing web_socket_node script to /home/taichi/ros2/install/harurobo_pkg/lib/harurobo_pkg\n'}
+[1.501038] (harurobo_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/taichi/ros2/build/harurobo_pkg/install.log'\n"}
+[1.503596] (-) TimerEvent: {}
+[1.539777] (harurobo_pkg) CommandEnded: {'returncode': 0}
+[1.577702] (harurobo_pkg) JobEnded: {'identifier': 'harurobo_pkg', 'rc': 0}
+[1.579963] (-) EventReactorShutdown: {}

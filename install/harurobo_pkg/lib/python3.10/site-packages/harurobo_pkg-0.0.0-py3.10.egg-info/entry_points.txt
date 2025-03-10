@@ -1,0 +1,6 @@
+[console_scripts]
+planning_node = harurobo_pkg.planning_node:main
+serial_receive_node = harurobo_pkg.serial_receive_node:main
+serial_send_node = harurobo_pkg.serial_send_node:main
+web_socket_node = harurobo_pkg.web_socket_node:main
+

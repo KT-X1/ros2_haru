@@ -1,0 +1,1134 @@
+[0.426s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.427s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x759ae5c69cc0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x759ae5c696c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x759ae5c696c0>>, mixin_verb=('build',))
+[0.887s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.887s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.887s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.887s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.887s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.887s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.887s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/taichi/ros2'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/harurobo_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/harurobo_pkg) by extension 'ignore'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/harurobo_pkg) by extension 'ignore_ament_install'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/harurobo_pkg) by extensions ['colcon_pkg']
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/harurobo_pkg) by extension 'colcon_pkg'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/harurobo_pkg) by extensions ['colcon_meta']
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/harurobo_pkg) by extension 'colcon_meta'
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/harurobo_pkg) by extensions ['ros']
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/harurobo_pkg) by extension 'ros'
+[0.916s] DEBUG:colcon.colcon_core.package_identification:Package 'src/harurobo_pkg' with type 'ros.ament_python' and name 'harurobo_pkg'
+[0.916s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extensions ['ignore', 'ignore_ament_install']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extension 'ignore'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extension 'ignore_ament_install'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extensions ['colcon_pkg']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extension 'colcon_pkg'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extensions ['colcon_meta']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extension 'colcon_meta'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extensions ['ros']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extension 'ros'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extensions ['cmake', 'python']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extension 'cmake'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extension 'python'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extensions ['python_setup_py']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(~) by extension 'python_setup_py'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extension 'ignore'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extension 'ignore_ament_install'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extensions ['colcon_pkg']
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extension 'colcon_pkg'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extensions ['colcon_meta']
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extension 'colcon_meta'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extensions ['ros']
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extension 'ros'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extensions ['cmake', 'python']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extension 'cmake'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extension 'python'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extensions ['python_setup_py']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2) by extension 'python_setup_py'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extensions ['ignore', 'ignore_ament_install']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extension 'ignore'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extension 'ignore_ament_install'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extensions ['colcon_pkg']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extension 'colcon_pkg'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extensions ['colcon_meta']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extension 'colcon_meta'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extensions ['ros']
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extension 'ros'
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extensions ['cmake', 'python']
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extension 'cmake'
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extension 'python'
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extensions ['python_setup_py']
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install) by extension 'python_setup_py'
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extension 'ignore'
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extension 'ignore_ament_install'
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extensions ['colcon_pkg']
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extension 'colcon_pkg'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extensions ['colcon_meta']
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extension 'colcon_meta'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extensions ['ros']
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extension 'ros'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extensions ['cmake', 'python']
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extension 'cmake'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extension 'python'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extensions ['python_setup_py']
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg) by extension 'python_setup_py'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extension 'ignore'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extension 'ignore_ament_install'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extensions ['colcon_pkg']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extension 'colcon_pkg'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extensions ['colcon_meta']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extension 'colcon_meta'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extensions ['ros']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extension 'ros'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extensions ['cmake', 'python']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extension 'cmake'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extension 'python'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extensions ['python_setup_py']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib) by extension 'python_setup_py'
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extensions ['ignore', 'ignore_ament_install']
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extension 'ignore'
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extension 'ignore_ament_install'
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extensions ['colcon_pkg']
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extension 'colcon_pkg'
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extensions ['colcon_meta']
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extension 'colcon_meta'
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extensions ['ros']
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extension 'ros'
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extensions ['cmake', 'python']
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extension 'cmake'
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extension 'python'
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extensions ['python_setup_py']
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10) by extension 'python_setup_py'
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extensions ['ignore', 'ignore_ament_install']
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extension 'ignore'
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extension 'ignore_ament_install'
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extensions ['colcon_pkg']
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extension 'colcon_pkg'
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extensions ['colcon_meta']
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extension 'colcon_meta'
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extensions ['ros']
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extension 'ros'
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extensions ['cmake', 'python']
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extension 'cmake'
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extension 'python'
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extensions ['python_setup_py']
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages) by extension 'python_setup_py'
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extension 'ignore'
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extension 'ignore_ament_install'
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extensions ['colcon_pkg']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extension 'colcon_pkg'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extensions ['colcon_meta']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extension 'colcon_meta'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extensions ['ros']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extension 'ros'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extensions ['cmake', 'python']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extension 'cmake'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extension 'python'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extensions ['python_setup_py']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/__pycache__) by extension 'python_setup_py'
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extensions ['ignore', 'ignore_ament_install']
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extension 'ignore'
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extension 'ignore_ament_install'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extensions ['colcon_pkg']
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extension 'colcon_pkg'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extensions ['colcon_meta']
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extension 'colcon_meta'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extensions ['ros']
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extension 'ros'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extensions ['cmake', 'python']
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extension 'cmake'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extension 'python'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extensions ['python_setup_py']
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types) by extension 'python_setup_py'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extension 'ignore'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extension 'ignore_ament_install'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extensions ['colcon_pkg']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extension 'colcon_pkg'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extensions ['colcon_meta']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extension 'colcon_meta'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extensions ['ros']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extension 'ros'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extensions ['cmake', 'python']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extension 'cmake'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extension 'python'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extensions ['python_setup_py']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types/__pycache__) by extension 'python_setup_py'
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extension 'ignore'
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extension 'ignore_ament_install'
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extensions ['colcon_pkg']
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extension 'colcon_pkg'
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extensions ['colcon_meta']
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extension 'colcon_meta'
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extensions ['ros']
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extension 'ros'
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extensions ['cmake', 'python']
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extension 'cmake'
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extension 'python'
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extensions ['python_setup_py']
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info) by extension 'python_setup_py'
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extensions ['ignore', 'ignore_ament_install']
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extension 'ignore'
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extension 'ignore_ament_install'
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extensions ['colcon_pkg']
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extension 'colcon_pkg'
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extensions ['colcon_meta']
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extension 'colcon_meta'
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extensions ['ros']
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extension 'ros'
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extensions ['cmake', 'python']
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extension 'cmake'
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extension 'python'
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extensions ['python_setup_py']
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/licenses) by extension 'python_setup_py'
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extensions ['ignore', 'ignore_ament_install']
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extension 'ignore'
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extension 'ignore_ament_install'
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extensions ['colcon_pkg']
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extension 'colcon_pkg'
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extensions ['colcon_meta']
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extension 'colcon_meta'
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extensions ['ros']
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extension 'ros'
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extensions ['cmake', 'python']
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extension 'cmake'
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extension 'python'
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extensions ['python_setup_py']
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio) by extension 'python_setup_py'
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extension 'ignore'
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extension 'ignore_ament_install'
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extensions ['colcon_pkg']
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extension 'colcon_pkg'
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extensions ['colcon_meta']
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extension 'colcon_meta'
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extensions ['ros']
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extension 'ros'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extensions ['cmake', 'python']
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extension 'cmake'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extension 'python'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extensions ['python_setup_py']
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/__pycache__) by extension 'python_setup_py'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extensions ['ignore', 'ignore_ament_install']
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extension 'ignore'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extension 'ignore_ament_install'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extensions ['colcon_pkg']
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extension 'colcon_pkg'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extensions ['colcon_meta']
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extension 'colcon_meta'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extensions ['ros']
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extension 'ros'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extensions ['cmake', 'python']
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extension 'cmake'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extension 'python'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extensions ['python_setup_py']
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends) by extension 'python_setup_py'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extension 'ignore'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extension 'ignore_ament_install'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extensions ['colcon_pkg']
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extension 'colcon_pkg'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extensions ['colcon_meta']
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extension 'colcon_meta'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extensions ['ros']
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extension 'ros'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extensions ['cmake', 'python']
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extension 'cmake'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extension 'python'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extensions ['python_setup_py']
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_backends/__pycache__) by extension 'python_setup_py'
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extensions ['ignore', 'ignore_ament_install']
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extension 'ignore'
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extension 'ignore_ament_install'
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extensions ['colcon_pkg']
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extension 'colcon_pkg'
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extensions ['colcon_meta']
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extension 'colcon_meta'
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extensions ['ros']
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extension 'ros'
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extensions ['cmake', 'python']
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extension 'cmake'
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extension 'python'
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extensions ['python_setup_py']
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core) by extension 'python_setup_py'
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extension 'ignore'
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extension 'ignore_ament_install'
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extensions ['colcon_pkg']
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extension 'colcon_pkg'
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extensions ['colcon_meta']
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extension 'colcon_meta'
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extensions ['ros']
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extension 'ros'
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extensions ['cmake', 'python']
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extension 'cmake'
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extension 'python'
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extensions ['python_setup_py']
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/_core/__pycache__) by extension 'python_setup_py'
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extensions ['ignore', 'ignore_ament_install']
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extension 'ignore'
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extension 'ignore_ament_install'
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extensions ['colcon_pkg']
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extension 'colcon_pkg'
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extensions ['colcon_meta']
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extension 'colcon_meta'
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extensions ['ros']
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extension 'ros'
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extensions ['cmake', 'python']
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extension 'cmake'
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extension 'python'
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extensions ['python_setup_py']
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc) by extension 'python_setup_py'
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extension 'ignore'
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extension 'ignore_ament_install'
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extensions ['colcon_pkg']
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extension 'colcon_pkg'
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extensions ['colcon_meta']
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extension 'colcon_meta'
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extensions ['ros']
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extension 'ros'
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extensions ['cmake', 'python']
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extension 'cmake'
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extension 'python'
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extensions ['python_setup_py']
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/abc/__pycache__) by extension 'python_setup_py'
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extensions ['ignore', 'ignore_ament_install']
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extension 'ignore'
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extension 'ignore_ament_install'
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extensions ['colcon_pkg']
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extension 'colcon_pkg'
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extensions ['colcon_meta']
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extension 'colcon_meta'
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extensions ['ros']
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extension 'ros'
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extensions ['cmake', 'python']
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extension 'cmake'
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extension 'python'
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extensions ['python_setup_py']
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams) by extension 'python_setup_py'
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extension 'ignore'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extension 'ignore_ament_install'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extensions ['colcon_pkg']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extension 'colcon_pkg'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extensions ['colcon_meta']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extension 'colcon_meta'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extensions ['ros']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extension 'ros'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extensions ['cmake', 'python']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extension 'cmake'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extension 'python'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extensions ['python_setup_py']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio/streams/__pycache__) by extension 'python_setup_py'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extension 'ignore'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extension 'ignore_ament_install'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extensions ['colcon_pkg']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extension 'colcon_pkg'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extensions ['colcon_meta']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extension 'colcon_meta'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extensions ['ros']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extension 'ros'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extensions ['cmake', 'python']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extension 'cmake'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extension 'python'
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extensions ['python_setup_py']
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/anyio-4.8.0.dist-info) by extension 'python_setup_py'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extensions ['ignore', 'ignore_ament_install']
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extension 'ignore'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extension 'ignore_ament_install'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extensions ['colcon_pkg']
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extension 'colcon_pkg'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extensions ['colcon_meta']
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extension 'colcon_meta'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extensions ['ros']
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extension 'ros'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extensions ['cmake', 'python']
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extension 'cmake'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extension 'python'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extensions ['python_setup_py']
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/bin) by extension 'python_setup_py'
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extensions ['ignore', 'ignore_ament_install']
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extension 'ignore'
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extension 'ignore_ament_install'
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extensions ['colcon_pkg']
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extension 'colcon_pkg'
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extensions ['colcon_meta']
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extension 'colcon_meta'
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extensions ['ros']
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extension 'ros'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extensions ['cmake', 'python']
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extension 'cmake'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extension 'python'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extensions ['python_setup_py']
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup) by extension 'python_setup_py'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extension 'ignore'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extension 'ignore_ament_install'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extensions ['colcon_pkg']
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extension 'colcon_pkg'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extensions ['colcon_meta']
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extension 'colcon_meta'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extensions ['ros']
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extension 'ros'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extensions ['cmake', 'python']
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extension 'cmake'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extension 'python'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extensions ['python_setup_py']
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup/__pycache__) by extension 'python_setup_py'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extension 'ignore'
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extension 'ignore_ament_install'
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extensions ['colcon_pkg']
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extension 'colcon_pkg'
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extensions ['colcon_meta']
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extension 'colcon_meta'
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extensions ['ros']
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extension 'ros'
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extensions ['cmake', 'python']
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extension 'cmake'
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extension 'python'
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extensions ['python_setup_py']
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info) by extension 'python_setup_py'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extensions ['ignore', 'ignore_ament_install']
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extension 'ignore'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extension 'ignore_ament_install'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extensions ['colcon_pkg']
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extension 'colcon_pkg'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extensions ['colcon_meta']
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extension 'colcon_meta'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extensions ['ros']
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extension 'ros'
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extensions ['cmake', 'python']
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extension 'cmake'
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extension 'python'
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extensions ['python_setup_py']
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi) by extension 'python_setup_py'
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extension 'ignore'
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extension 'ignore_ament_install'
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extensions ['colcon_pkg']
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extension 'colcon_pkg'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extensions ['colcon_meta']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extension 'colcon_meta'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extensions ['ros']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extension 'ros'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extensions ['cmake', 'python']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extension 'cmake'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extension 'python'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extensions ['python_setup_py']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/__pycache__) by extension 'python_setup_py'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extensions ['ignore', 'ignore_ament_install']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extension 'ignore'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extension 'ignore_ament_install'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extensions ['colcon_pkg']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extension 'colcon_pkg'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extensions ['colcon_meta']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extension 'colcon_meta'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extensions ['ros']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extension 'ros'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extensions ['cmake', 'python']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extension 'cmake'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extension 'python'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extensions ['python_setup_py']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies) by extension 'python_setup_py'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extension 'ignore'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extension 'ignore_ament_install'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extensions ['colcon_pkg']
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extension 'colcon_pkg'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extensions ['colcon_meta']
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extension 'colcon_meta'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extensions ['ros']
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extension 'ros'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extensions ['cmake', 'python']
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extension 'cmake'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extension 'python'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extensions ['python_setup_py']
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/dependencies/__pycache__) by extension 'python_setup_py'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extensions ['ignore', 'ignore_ament_install']
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extension 'ignore'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extension 'ignore_ament_install'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extensions ['colcon_pkg']
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extension 'colcon_pkg'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extensions ['colcon_meta']
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extension 'colcon_meta'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extensions ['ros']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extension 'ros'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extensions ['cmake', 'python']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extension 'cmake'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extension 'python'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extensions ['python_setup_py']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware) by extension 'python_setup_py'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extension 'ignore'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extension 'ignore_ament_install'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extensions ['colcon_pkg']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extension 'colcon_pkg'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extensions ['colcon_meta']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extension 'colcon_meta'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extensions ['ros']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extension 'ros'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extensions ['cmake', 'python']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extension 'cmake'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extension 'python'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extensions ['python_setup_py']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/middleware/__pycache__) by extension 'python_setup_py'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extensions ['ignore', 'ignore_ament_install']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extension 'ignore'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extension 'ignore_ament_install'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extensions ['colcon_pkg']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extension 'colcon_pkg'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extensions ['colcon_meta']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extension 'colcon_meta'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extensions ['ros']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extension 'ros'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extensions ['cmake', 'python']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extension 'cmake'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extension 'python'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extensions ['python_setup_py']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi) by extension 'python_setup_py'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extension 'ignore'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extension 'ignore_ament_install'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extensions ['colcon_pkg']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extension 'colcon_pkg'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extensions ['colcon_meta']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extension 'colcon_meta'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extensions ['ros']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extension 'ros'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extensions ['cmake', 'python']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extension 'cmake'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extension 'python'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extensions ['python_setup_py']
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/openapi/__pycache__) by extension 'python_setup_py'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extensions ['ignore', 'ignore_ament_install']
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extension 'ignore'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extension 'ignore_ament_install'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extensions ['colcon_pkg']
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extension 'colcon_pkg'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extensions ['colcon_meta']
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extension 'colcon_meta'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extensions ['ros']
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extension 'ros'
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extensions ['cmake', 'python']
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extension 'cmake'
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extension 'python'
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extensions ['python_setup_py']
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security) by extension 'python_setup_py'
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extension 'ignore'
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extension 'ignore_ament_install'
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extensions ['colcon_pkg']
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extension 'colcon_pkg'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extensions ['colcon_meta']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extension 'colcon_meta'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extensions ['ros']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extension 'ros'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extensions ['cmake', 'python']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extension 'cmake'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extension 'python'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extensions ['python_setup_py']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi/security/__pycache__) by extension 'python_setup_py'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extension 'ignore'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extension 'ignore_ament_install'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extensions ['colcon_pkg']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extension 'colcon_pkg'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extensions ['colcon_meta']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extension 'colcon_meta'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extensions ['ros']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extension 'ros'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extensions ['cmake', 'python']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extension 'cmake'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extension 'python'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extensions ['python_setup_py']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info) by extension 'python_setup_py'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extensions ['ignore', 'ignore_ament_install']
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extension 'ignore'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extension 'ignore_ament_install'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extensions ['colcon_pkg']
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extension 'colcon_pkg'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extensions ['colcon_meta']
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extension 'colcon_meta'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extensions ['ros']
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extension 'ros'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extensions ['cmake', 'python']
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extension 'cmake'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extension 'python'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extensions ['python_setup_py']
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/fastapi-0.115.11.dist-info/licenses) by extension 'python_setup_py'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extensions ['ignore', 'ignore_ament_install']
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extension 'ignore'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extension 'ignore_ament_install'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extensions ['colcon_pkg']
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extension 'colcon_pkg'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extensions ['colcon_meta']
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extension 'colcon_meta'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extensions ['ros']
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extension 'ros'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extensions ['cmake', 'python']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extension 'cmake'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extension 'python'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extensions ['python_setup_py']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna) by extension 'python_setup_py'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extension 'ignore'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extension 'ignore_ament_install'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extensions ['colcon_pkg']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extension 'colcon_pkg'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extensions ['colcon_meta']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extension 'colcon_meta'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extensions ['ros']
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extension 'ros'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extensions ['cmake', 'python']
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extension 'cmake'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extension 'python'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extensions ['python_setup_py']
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna/__pycache__) by extension 'python_setup_py'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extension 'ignore'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extension 'ignore_ament_install'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extensions ['colcon_pkg']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extension 'colcon_pkg'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extensions ['colcon_meta']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extension 'colcon_meta'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extensions ['ros']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extension 'ros'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extensions ['cmake', 'python']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extension 'cmake'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extension 'python'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extensions ['python_setup_py']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/idna-3.10.dist-info) by extension 'python_setup_py'
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extensions ['ignore', 'ignore_ament_install']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extension 'ignore'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extension 'ignore_ament_install'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extensions ['colcon_pkg']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extension 'colcon_pkg'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extensions ['colcon_meta']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extension 'colcon_meta'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extensions ['ros']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extension 'ros'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extensions ['cmake', 'python']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extension 'cmake'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extension 'python'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extensions ['python_setup_py']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic) by extension 'python_setup_py'
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extension 'ignore'
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extension 'ignore_ament_install'
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extensions ['colcon_pkg']
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extension 'colcon_pkg'
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extensions ['colcon_meta']
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extension 'colcon_meta'
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extensions ['ros']
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extension 'ros'
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extensions ['cmake', 'python']
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extension 'cmake'
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extension 'python'
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extensions ['python_setup_py']
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/__pycache__) by extension 'python_setup_py'
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extensions ['ignore', 'ignore_ament_install']
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extension 'ignore'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extension 'ignore_ament_install'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extensions ['colcon_pkg']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extension 'colcon_pkg'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extensions ['colcon_meta']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extension 'colcon_meta'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extensions ['ros']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extension 'ros'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extensions ['cmake', 'python']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extension 'cmake'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extension 'python'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extensions ['python_setup_py']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal) by extension 'python_setup_py'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extension 'ignore'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extension 'ignore_ament_install'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extensions ['colcon_pkg']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extension 'colcon_pkg'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extensions ['colcon_meta']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extension 'colcon_meta'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extensions ['ros']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extension 'ros'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extensions ['cmake', 'python']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extension 'cmake'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extension 'python'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extensions ['python_setup_py']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/_internal/__pycache__) by extension 'python_setup_py'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extensions ['ignore', 'ignore_ament_install']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extension 'ignore'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extension 'ignore_ament_install'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extensions ['colcon_pkg']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extension 'colcon_pkg'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extensions ['colcon_meta']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extension 'colcon_meta'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extensions ['ros']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extension 'ros'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extensions ['cmake', 'python']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extension 'cmake'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extension 'python'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extensions ['python_setup_py']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated) by extension 'python_setup_py'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extension 'ignore'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extension 'ignore_ament_install'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extensions ['colcon_pkg']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extension 'colcon_pkg'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extensions ['colcon_meta']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extension 'colcon_meta'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extensions ['ros']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extension 'ros'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extensions ['cmake', 'python']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extension 'cmake'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extension 'python'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extensions ['python_setup_py']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/deprecated/__pycache__) by extension 'python_setup_py'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extensions ['ignore', 'ignore_ament_install']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extension 'ignore'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extension 'ignore_ament_install'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extensions ['colcon_pkg']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extension 'colcon_pkg'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extensions ['colcon_meta']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extension 'colcon_meta'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extensions ['ros']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extension 'ros'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extensions ['cmake', 'python']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extension 'cmake'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extension 'python'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extensions ['python_setup_py']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental) by extension 'python_setup_py'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extension 'ignore'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extension 'ignore_ament_install'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extensions ['colcon_pkg']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extension 'colcon_pkg'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extensions ['colcon_meta']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extension 'colcon_meta'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extensions ['ros']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extension 'ros'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extensions ['cmake', 'python']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extension 'cmake'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extension 'python'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extensions ['python_setup_py']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/experimental/__pycache__) by extension 'python_setup_py'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extension 'ignore'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extension 'ignore_ament_install'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extensions ['colcon_pkg']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extension 'colcon_pkg'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extensions ['colcon_meta']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extension 'colcon_meta'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extensions ['ros']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extension 'ros'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extensions ['cmake', 'python']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extension 'cmake'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extension 'python'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extensions ['python_setup_py']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin) by extension 'python_setup_py'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extension 'ignore'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extension 'ignore_ament_install'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extensions ['colcon_pkg']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extension 'colcon_pkg'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extensions ['colcon_meta']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extension 'colcon_meta'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extensions ['ros']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extension 'ros'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extensions ['cmake', 'python']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extension 'cmake'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extension 'python'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extensions ['python_setup_py']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/plugin/__pycache__) by extension 'python_setup_py'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extensions ['ignore', 'ignore_ament_install']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extension 'ignore'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extension 'ignore_ament_install'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extensions ['colcon_pkg']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extension 'colcon_pkg'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extensions ['colcon_meta']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extension 'colcon_meta'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extensions ['ros']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extension 'ros'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extensions ['cmake', 'python']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extension 'cmake'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extension 'python'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extensions ['python_setup_py']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1) by extension 'python_setup_py'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extension 'ignore'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extension 'ignore_ament_install'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extensions ['colcon_pkg']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extension 'colcon_pkg'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extensions ['colcon_meta']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extension 'colcon_meta'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extensions ['ros']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extension 'ros'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extensions ['cmake', 'python']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extension 'cmake'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extension 'python'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extensions ['python_setup_py']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic/v1/__pycache__) by extension 'python_setup_py'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extension 'ignore'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extension 'ignore_ament_install'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extensions ['colcon_pkg']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extension 'colcon_pkg'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extensions ['colcon_meta']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extension 'colcon_meta'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extensions ['ros']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extension 'ros'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extensions ['cmake', 'python']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extension 'cmake'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extension 'python'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extensions ['python_setup_py']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info) by extension 'python_setup_py'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extensions ['ignore', 'ignore_ament_install']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extension 'ignore'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extension 'ignore_ament_install'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extensions ['colcon_pkg']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extension 'colcon_pkg'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extensions ['colcon_meta']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extension 'colcon_meta'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extensions ['ros']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extension 'ros'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extensions ['cmake', 'python']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extension 'cmake'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extension 'python'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extensions ['python_setup_py']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic-2.10.6.dist-info/licenses) by extension 'python_setup_py'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extensions ['ignore', 'ignore_ament_install']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extension 'ignore'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extension 'ignore_ament_install'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extensions ['colcon_pkg']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extension 'colcon_pkg'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extensions ['colcon_meta']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extension 'colcon_meta'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extensions ['ros']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extension 'ros'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extensions ['cmake', 'python']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extension 'cmake'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extension 'python'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extensions ['python_setup_py']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core) by extension 'python_setup_py'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extension 'ignore'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extension 'ignore_ament_install'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extensions ['colcon_pkg']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extension 'colcon_pkg'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extensions ['colcon_meta']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extension 'colcon_meta'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extensions ['ros']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extension 'ros'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extensions ['cmake', 'python']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extension 'cmake'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extension 'python'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extensions ['python_setup_py']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core/__pycache__) by extension 'python_setup_py'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extension 'ignore'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extension 'ignore_ament_install'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extensions ['colcon_pkg']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extension 'colcon_pkg'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extensions ['colcon_meta']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extension 'colcon_meta'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extensions ['ros']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extension 'ros'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extensions ['cmake', 'python']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extension 'cmake'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extension 'python'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extensions ['python_setup_py']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info) by extension 'python_setup_py'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extensions ['ignore', 'ignore_ament_install']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extension 'ignore'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extension 'ignore_ament_install'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extensions ['colcon_pkg']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extension 'colcon_pkg'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extensions ['colcon_meta']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extension 'colcon_meta'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extensions ['ros']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extension 'ros'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extensions ['cmake', 'python']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extension 'cmake'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extension 'python'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extensions ['python_setup_py']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/pydantic_core-2.27.2.dist-info/licenses) by extension 'python_setup_py'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extensions ['ignore', 'ignore_ament_install']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extension 'ignore'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extension 'ignore_ament_install'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extensions ['colcon_pkg']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extension 'colcon_pkg'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extensions ['colcon_meta']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extension 'colcon_meta'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extensions ['ros']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extension 'ros'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extensions ['cmake', 'python']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extension 'cmake'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extension 'python'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extensions ['python_setup_py']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio) by extension 'python_setup_py'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extension 'ignore'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extension 'ignore_ament_install'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extensions ['colcon_pkg']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extension 'colcon_pkg'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extensions ['colcon_meta']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extension 'colcon_meta'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extensions ['ros']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extension 'ros'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extensions ['cmake', 'python']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extension 'cmake'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extension 'python'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extensions ['python_setup_py']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/__pycache__) by extension 'python_setup_py'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extension 'ignore'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extension 'ignore_ament_install'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extensions ['colcon_pkg']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extension 'colcon_pkg'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extensions ['colcon_meta']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extension 'colcon_meta'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extensions ['ros']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extension 'ros'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extensions ['cmake', 'python']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extension 'cmake'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extension 'python'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extensions ['python_setup_py']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests) by extension 'python_setup_py'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extension 'ignore'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extension 'ignore_ament_install'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extensions ['colcon_pkg']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extension 'colcon_pkg'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extensions ['colcon_meta']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extension 'colcon_meta'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extensions ['ros']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extension 'ros'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extensions ['cmake', 'python']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extension 'cmake'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extension 'python'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extensions ['python_setup_py']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio/_tests/__pycache__) by extension 'python_setup_py'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extension 'ignore'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extension 'ignore_ament_install'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extensions ['colcon_pkg']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extension 'colcon_pkg'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extensions ['colcon_meta']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extension 'colcon_meta'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extensions ['ros']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extension 'ros'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extensions ['cmake', 'python']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extension 'cmake'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extension 'python'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extensions ['python_setup_py']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/sniffio-1.3.1.dist-info) by extension 'python_setup_py'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extensions ['ignore', 'ignore_ament_install']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extension 'ignore'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extension 'ignore_ament_install'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extensions ['colcon_pkg']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extension 'colcon_pkg'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extensions ['colcon_meta']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extension 'colcon_meta'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extensions ['ros']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extension 'ros'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extensions ['cmake', 'python']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extension 'cmake'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extension 'python'
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extensions ['python_setup_py']
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette) by extension 'python_setup_py'
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extension 'ignore'
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extension 'ignore_ament_install'
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extensions ['colcon_pkg']
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extension 'colcon_pkg'
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extensions ['colcon_meta']
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extension 'colcon_meta'
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extensions ['ros']
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extension 'ros'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extensions ['cmake', 'python']
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extension 'cmake'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extension 'python'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extensions ['python_setup_py']
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/__pycache__) by extension 'python_setup_py'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extensions ['ignore', 'ignore_ament_install']
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extension 'ignore'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extension 'ignore_ament_install'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extensions ['colcon_pkg']
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extension 'colcon_pkg'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extensions ['colcon_meta']
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extension 'colcon_meta'
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extensions ['ros']
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extension 'ros'
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extensions ['cmake', 'python']
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extension 'cmake'
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extension 'python'
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extensions ['python_setup_py']
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware) by extension 'python_setup_py'
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extension 'ignore'
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extension 'ignore_ament_install'
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extensions ['colcon_pkg']
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extension 'colcon_pkg'
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extensions ['colcon_meta']
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extension 'colcon_meta'
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extensions ['ros']
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extension 'ros'
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extensions ['cmake', 'python']
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extension 'cmake'
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extension 'python'
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extensions ['python_setup_py']
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette/middleware/__pycache__) by extension 'python_setup_py'
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extension 'ignore'
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extension 'ignore_ament_install'
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extensions ['colcon_pkg']
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extension 'colcon_pkg'
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extensions ['colcon_meta']
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extension 'colcon_meta'
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extensions ['ros']
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extension 'ros'
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extensions ['cmake', 'python']
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extension 'cmake'
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extension 'python'
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extensions ['python_setup_py']
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info) by extension 'python_setup_py'
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extensions ['ignore', 'ignore_ament_install']
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extension 'ignore'
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extension 'ignore_ament_install'
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extensions ['colcon_pkg']
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extension 'colcon_pkg'
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extensions ['colcon_meta']
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extension 'colcon_meta'
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extensions ['ros']
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extension 'ros'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extensions ['cmake', 'python']
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extension 'cmake'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extension 'python'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extensions ['python_setup_py']
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/starlette-0.46.0.dist-info/licenses) by extension 'python_setup_py'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extension 'ignore'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extension 'ignore_ament_install'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extensions ['colcon_pkg']
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extension 'colcon_pkg'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extensions ['colcon_meta']
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extension 'colcon_meta'
+[1.010s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extensions ['ros']
+[1.010s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extension 'ros'
+[1.010s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extensions ['cmake', 'python']
+[1.010s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extension 'cmake'
+[1.010s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extension 'python'
+[1.010s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extensions ['python_setup_py']
+[1.010s] Level 1:colcon.colcon_core.package_identification:_identify(~/ros2/install/harurobo_pkg/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info) by extension 'python_setup_py'
+[1.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.071s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 326 installed packages in /opt/ros/humble
+[1.074s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'harurobo_pkg' build argument 'cmake_args' from command line to 'None'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'harurobo_pkg' build argument 'cmake_target' from command line to 'None'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'harurobo_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'harurobo_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'harurobo_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'harurobo_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'harurobo_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'harurobo_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'harurobo_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.143s] DEBUG:colcon.colcon_core.verb:Building package 'harurobo_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/taichi/ros2/build/harurobo_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/taichi/ros2/install/harurobo_pkg', 'merge_install': False, 'path': '/home/taichi/ros2/src/harurobo_pkg', 'symlink_install': False, 'test_result_base': None}
+[1.143s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.145s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.145s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/taichi/ros2/src/harurobo_pkg' with build type 'ament_python'
+[1.146s] Level 1:colcon.colcon_core.shell:create_environment_hook('harurobo_pkg', 'ament_prefix_path')
+[1.152s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/taichi/ros2/install/harurobo_pkg/share/harurobo_pkg/hook/ament_prefix_path.ps1'
+[1.155s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/taichi/ros2/install/harurobo_pkg/share/harurobo_pkg/hook/ament_prefix_path.dsv'
+[1.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/taichi/ros2/install/harurobo_pkg/share/harurobo_pkg/hook/ament_prefix_path.sh'
+[1.158s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.158s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.571s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/taichi/ros2/src/harurobo_pkg'
+[1.572s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.572s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/taichi/ros2/src/harurobo_pkg': PYTHONPATH=/home/taichi/ros2/build/harurobo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/harurobo_pkg build --build-base /home/taichi/ros2/build/harurobo_pkg/build install --record /home/taichi/ros2/build/harurobo_pkg/install.log --single-version-externally-managed install_data
+[2.752s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/taichi/ros2/src/harurobo_pkg' returned '0': PYTHONPATH=/home/taichi/ros2/build/harurobo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/harurobo_pkg build --build-base /home/taichi/ros2/build/harurobo_pkg/build install --record /home/taichi/ros2/build/harurobo_pkg/install.log --single-version-externally-managed install_data
+[2.761s] Level 1:colcon.colcon_core.environment:checking '/home/taichi/ros2/install/harurobo_pkg' for CMake module files
+[2.762s] Level 1:colcon.colcon_core.environment:checking '/home/taichi/ros2/install/harurobo_pkg' for CMake config files
+[2.763s] Level 1:colcon.colcon_core.environment:checking '/home/taichi/ros2/install/harurobo_pkg/lib'
+[2.763s] Level 1:colcon.colcon_core.environment:checking '/home/taichi/ros2/install/harurobo_pkg/bin'
+[2.763s] Level 1:colcon.colcon_core.environment:checking '/home/taichi/ros2/install/harurobo_pkg/lib/pkgconfig/harurobo_pkg.pc'
+[2.764s] Level 1:colcon.colcon_core.environment:checking '/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages'
+[2.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('harurobo_pkg', 'pythonpath')
+[2.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/taichi/ros2/install/harurobo_pkg/share/harurobo_pkg/hook/pythonpath.ps1'
+[2.765s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/taichi/ros2/install/harurobo_pkg/share/harurobo_pkg/hook/pythonpath.dsv'
+[2.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/taichi/ros2/install/harurobo_pkg/share/harurobo_pkg/hook/pythonpath.sh'
+[2.766s] Level 1:colcon.colcon_core.environment:checking '/home/taichi/ros2/install/harurobo_pkg/bin'
+[2.766s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(harurobo_pkg)
+[2.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/taichi/ros2/install/harurobo_pkg/share/harurobo_pkg/package.ps1'
+[2.768s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/taichi/ros2/install/harurobo_pkg/share/harurobo_pkg/package.dsv'
+[2.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/taichi/ros2/install/harurobo_pkg/share/harurobo_pkg/package.sh'
+[2.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/taichi/ros2/install/harurobo_pkg/share/harurobo_pkg/package.bash'
+[2.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/taichi/ros2/install/harurobo_pkg/share/harurobo_pkg/package.zsh'
+[2.780s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/taichi/ros2/install/harurobo_pkg/share/colcon-core/packages/harurobo_pkg)
+[2.782s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.783s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.783s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.784s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.801s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.802s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.802s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.871s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.872s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/taichi/ros2/install/local_setup.ps1'
+[2.875s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/taichi/ros2/install/_local_setup_util_ps1.py'
+[2.880s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/taichi/ros2/install/setup.ps1'
+[2.882s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/taichi/ros2/install/local_setup.sh'
+[2.884s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/taichi/ros2/install/_local_setup_util_sh.py'
+[2.885s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/taichi/ros2/install/setup.sh'
+[2.888s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/taichi/ros2/install/local_setup.bash'
+[2.890s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/taichi/ros2/install/setup.bash'
+[2.892s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/taichi/ros2/install/local_setup.zsh'
+[2.894s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/taichi/ros2/install/setup.zsh'

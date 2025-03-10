@@ -1,0 +1,5 @@
+  File "/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/serial_node.py", line 6
+    Int8 data_[4] = {100,100,100,100}
+         ^^^^^
+SyntaxError: invalid syntax
+

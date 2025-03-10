@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/harurobo_pkg/harurobo_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/harurobo_pkg/harurobo_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/harurobo_pkg/harurobo_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/harurobo_pkg/harurobo_pkg.egg-info/requires.txt
+writing top-level names to ../../build/harurobo_pkg/harurobo_pkg.egg-info/top_level.txt
+reading manifest file '../../build/harurobo_pkg/harurobo_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/harurobo_pkg/harurobo_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+copying harurobo_pkg/serial_node.py -> /home/taichi/ros2/build/harurobo_pkg/build/lib/harurobo_pkg
+running install
+running install_lib
+copying /home/taichi/ros2/build/harurobo_pkg/build/lib/harurobo_pkg/serial_node.py -> /home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg
+byte-compiling /home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/serial_node.py to serial_node.cpython-310.pyc
+  File "/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/serial_node.py", line 6
+    Int8 data_[4] = {100,100,100,100}
+         ^^^^^
+SyntaxError: invalid syntax
+
+running install_data
+running install_egg_info
+removing '/home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/harurobo_pkg/harurobo_pkg.egg-info to /home/taichi/ros2/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing planning_node script to /home/taichi/ros2/install/harurobo_pkg/lib/harurobo_pkg
+Installing serial_node script to /home/taichi/ros2/install/harurobo_pkg/lib/harurobo_pkg
+writing list of installed files to '/home/taichi/ros2/build/harurobo_pkg/install.log'
