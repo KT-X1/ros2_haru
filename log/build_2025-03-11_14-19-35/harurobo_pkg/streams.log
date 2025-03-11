@@ -1,0 +1,31 @@
+[1.202s] Invoking command in '/home/altair/.local/share/Trash/files/ros2_haru/src/harurobo_pkg': PYTHONPATH=/home/altair/.local/share/Trash/files/ros2_haru/build/harurobo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/altair/.local/share/Trash/files/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/harurobo_pkg build --build-base /home/altair/.local/share/Trash/files/ros2_haru/build/harurobo_pkg/build install --record /home/altair/.local/share/Trash/files/ros2_haru/build/harurobo_pkg/install.log --single-version-externally-managed install_data
+[1.388s] /home/altair/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.388s]   warnings.warn(msg)
+[1.556s] running egg_info
+[1.583s] writing ../../build/harurobo_pkg/harurobo_pkg.egg-info/PKG-INFO
+[1.584s] writing dependency_links to ../../build/harurobo_pkg/harurobo_pkg.egg-info/dependency_links.txt
+[1.584s] writing entry points to ../../build/harurobo_pkg/harurobo_pkg.egg-info/entry_points.txt
+[1.584s] writing requirements to ../../build/harurobo_pkg/harurobo_pkg.egg-info/requires.txt
+[1.584s] writing top-level names to ../../build/harurobo_pkg/harurobo_pkg.egg-info/top_level.txt
+[1.641s] reading manifest file '../../build/harurobo_pkg/harurobo_pkg.egg-info/SOURCES.txt'
+[1.642s] writing manifest file '../../build/harurobo_pkg/harurobo_pkg.egg-info/SOURCES.txt'
+[1.643s] running build
+[1.643s] running build_py
+[1.643s] copying harurobo_pkg/planning_node.py -> /home/altair/.local/share/Trash/files/ros2_haru/build/harurobo_pkg/build/lib/harurobo_pkg
+[1.643s] copying harurobo_pkg/web_socket_node.py -> /home/altair/.local/share/Trash/files/ros2_haru/build/harurobo_pkg/build/lib/harurobo_pkg
+[1.643s] copying harurobo_pkg/__init__.py -> /home/altair/.local/share/Trash/files/ros2_haru/build/harurobo_pkg/build/lib/harurobo_pkg
+[1.643s] copying harurobo_pkg/can_node.py -> /home/altair/.local/share/Trash/files/ros2_haru/build/harurobo_pkg/build/lib/harurobo_pkg
+[1.644s] running install
+[1.649s] running install_lib
+[1.677s] running install_data
+[1.678s] copying resource/harurobo_pkg -> /home/altair/.local/share/Trash/files/ros2_haru/install/harurobo_pkg/share/ament_index/resource_index/packages
+[1.678s] copying package.xml -> /home/altair/.local/share/Trash/files/ros2_haru/install/harurobo_pkg/share/harurobo_pkg
+[1.678s] running install_egg_info
+[1.706s] removing '/home/altair/.local/share/Trash/files/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.707s] Copying ../../build/harurobo_pkg/harurobo_pkg.egg-info to /home/altair/.local/share/Trash/files/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info
+[1.708s] running install_scripts
+[1.916s] Installing can_node script to /home/altair/.local/share/Trash/files/ros2_haru/install/harurobo_pkg/lib/harurobo_pkg
+[1.916s] Installing planning_node script to /home/altair/.local/share/Trash/files/ros2_haru/install/harurobo_pkg/lib/harurobo_pkg
+[1.916s] Installing web_socket_node script to /home/altair/.local/share/Trash/files/ros2_haru/install/harurobo_pkg/lib/harurobo_pkg
+[1.916s] writing list of installed files to '/home/altair/.local/share/Trash/files/ros2_haru/build/harurobo_pkg/install.log'
+[1.947s] Invoked command in '/home/altair/.local/share/Trash/files/ros2_haru/src/harurobo_pkg' returned '0': PYTHONPATH=/home/altair/.local/share/Trash/files/ros2_haru/build/harurobo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/altair/.local/share/Trash/files/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/harurobo_pkg build --build-base /home/altair/.local/share/Trash/files/ros2_haru/build/harurobo_pkg/build install --record /home/altair/.local/share/Trash/files/ros2_haru/build/harurobo_pkg/install.log --single-version-externally-managed install_data
