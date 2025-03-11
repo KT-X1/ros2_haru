@@ -8,7 +8,7 @@ class SerialToPositionNode(Node):
     def __init__(self):
         super().__init__('serial_receive_node')
 
-        self.ser = serial.Serial("/dev/ttyACM1", baudrate=9600)
+        self.ser = serial.Serial("/dev/ttyACM0", baudrate=9600)
         self.publisher_ = self.create_publisher(Float32MultiArray, 'robot_position', 10) #(serial_receive_node->(robot_position)->position_node
         self.timer = self.create_timer(0.1, self.timer_callback)  # より頻繁にバッファをチェックするためのタイマー
         self.buffer = b''
