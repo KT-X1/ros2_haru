@@ -1,0 +1,136 @@
+[0.000000] (-) TimerEvent: {}
+[0.000380] (harurobo_pkg) JobQueued: {'identifier': 'harurobo_pkg', 'dependencies': OrderedDict()}
+[0.000593] (harurobo_pkg) JobStarted: {'identifier': 'harurobo_pkg'}
+[0.099815] (-) TimerEvent: {}
+[0.201261] (-) TimerEvent: {}
+[0.302666] (-) TimerEvent: {}
+[0.403962] (-) TimerEvent: {}
+[0.505197] (-) TimerEvent: {}
+[0.606537] (-) TimerEvent: {}
+[0.707185] (-) TimerEvent: {}
+[0.808286] (-) TimerEvent: {}
+[0.909680] (-) TimerEvent: {}
+[1.011560] (-) TimerEvent: {}
+[1.112554] (-) TimerEvent: {}
+[1.213911] (-) TimerEvent: {}
+[1.315343] (-) TimerEvent: {}
+[1.416974] (-) TimerEvent: {}
+[1.522128] (-) TimerEvent: {}
+[1.623431] (-) TimerEvent: {}
+[1.724018] (-) TimerEvent: {}
+[1.824492] (-) TimerEvent: {}
+[1.925181] (-) TimerEvent: {}
+[2.026690] (-) TimerEvent: {}
+[2.128178] (-) TimerEvent: {}
+[2.229283] (-) TimerEvent: {}
+[2.330171] (-) TimerEvent: {}
+[2.431338] (-) TimerEvent: {}
+[2.532854] (-) TimerEvent: {}
+[2.634116] (-) TimerEvent: {}
+[2.735283] (-) TimerEvent: {}
+[2.836337] (-) TimerEvent: {}
+[2.938222] (-) TimerEvent: {}
+[3.039601] (-) TimerEvent: {}
+[3.141134] (-) TimerEvent: {}
+[3.242762] (-) TimerEvent: {}
+[3.344270] (-) TimerEvent: {}
+[3.445721] (-) TimerEvent: {}
+[3.547006] (-) TimerEvent: {}
+[3.648157] (-) TimerEvent: {}
+[3.749309] (-) TimerEvent: {}
+[3.850798] (-) TimerEvent: {}
+[3.951997] (-) TimerEvent: {}
+[4.053186] (-) TimerEvent: {}
+[4.153706] (-) TimerEvent: {}
+[4.255305] (-) TimerEvent: {}
+[4.356508] (-) TimerEvent: {}
+[4.457957] (-) TimerEvent: {}
+[4.559263] (-) TimerEvent: {}
+[4.660643] (-) TimerEvent: {}
+[4.761805] (-) TimerEvent: {}
+[4.863100] (-) TimerEvent: {}
+[4.964495] (-) TimerEvent: {}
+[5.065708] (-) TimerEvent: {}
+[5.167113] (-) TimerEvent: {}
+[5.268671] (-) TimerEvent: {}
+[5.369637] (-) TimerEvent: {}
+[5.470860] (-) TimerEvent: {}
+[5.571929] (-) TimerEvent: {}
+[5.673380] (-) TimerEvent: {}
+[5.774930] (-) TimerEvent: {}
+[5.876390] (-) TimerEvent: {}
+[5.977608] (-) TimerEvent: {}
+[6.078250] (-) TimerEvent: {}
+[6.107100] (harurobo_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/harurobo_pkg', 'build', '--build-base', '/home/altair/ros2_haru/build/harurobo_pkg/build', 'install', '--record', '/home/altair/ros2_haru/build/harurobo_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/altair/ros2_haru/src/harurobo_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'ja:en', 'USER': 'altair', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'STM32CubeMX_PATH': '/home/altair/STM32CubeMX', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/local/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/altair', 'OLDPWD': '/home/altair', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ja_JP.UTF-8', 'SYSTEMD_EXEC_PID': '1337', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'altair', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'altair', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/altair/.local/bin:/home/altair/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/altair/bin:/home/altair/bin', 'SESSION_MANAGER': 'local/altair-ThinkPad-L380:@/tmp/.ICE-unix/1308,unix/altair-ThinkPad-L380:/tmp/.ICE-unix/1308', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ja_JP.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/bb07c4a4_963b_46b6_8bc2_2eb6cae012d0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'ja_JP.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.WD0222', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.111', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/altair/ros2_haru/build/harurobo_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/altair/ros2_haru/build/harurobo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[6.178547] (-) TimerEvent: {}
+[6.280019] (-) TimerEvent: {}
+[6.381431] (-) TimerEvent: {}
+[6.484795] (-) TimerEvent: {}
+[6.586482] (-) TimerEvent: {}
+[6.687982] (-) TimerEvent: {}
+[6.789519] (-) TimerEvent: {}
+[6.890261] (-) TimerEvent: {}
+[6.991430] (-) TimerEvent: {}
+[7.037159] (harurobo_pkg) StderrLine: {'line': b"/home/altair/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[7.037511] (harurobo_pkg) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[7.091728] (-) TimerEvent: {}
+[7.192948] (-) TimerEvent: {}
+[7.294309] (-) TimerEvent: {}
+[7.395790] (-) TimerEvent: {}
+[7.497368] (-) TimerEvent: {}
+[7.598835] (-) TimerEvent: {}
+[7.699068] (-) TimerEvent: {}
+[7.799324] (-) TimerEvent: {}
+[7.900219] (-) TimerEvent: {}
+[8.000143] (harurobo_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[8.000421] (-) TimerEvent: {}
+[8.049304] (harurobo_pkg) StdoutLine: {'line': b'writing ../../build/harurobo_pkg/harurobo_pkg.egg-info/PKG-INFO\n'}
+[8.049896] (harurobo_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/harurobo_pkg/harurobo_pkg.egg-info/dependency_links.txt\n'}
+[8.050360] (harurobo_pkg) StdoutLine: {'line': b'writing entry points to ../../build/harurobo_pkg/harurobo_pkg.egg-info/entry_points.txt\n'}
+[8.050729] (harurobo_pkg) StdoutLine: {'line': b'writing requirements to ../../build/harurobo_pkg/harurobo_pkg.egg-info/requires.txt\n'}
+[8.050958] (harurobo_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/harurobo_pkg/harurobo_pkg.egg-info/top_level.txt\n'}
+[8.100990] (-) TimerEvent: {}
+[8.202366] (-) TimerEvent: {}
+[8.287303] (harurobo_pkg) StdoutLine: {'line': b"reading manifest file '../../build/harurobo_pkg/harurobo_pkg.egg-info/SOURCES.txt'\n"}
+[8.289105] (harurobo_pkg) StdoutLine: {'line': b"writing manifest file '../../build/harurobo_pkg/harurobo_pkg.egg-info/SOURCES.txt'\n"}
+[8.289325] (harurobo_pkg) StdoutLine: {'line': b'running build\n'}
+[8.289436] (harurobo_pkg) StdoutLine: {'line': b'running build_py\n'}
+[8.289630] (harurobo_pkg) StdoutLine: {'line': b'copying harurobo_pkg/planning_node.py -> /home/altair/ros2_haru/build/harurobo_pkg/build/lib/harurobo_pkg\n'}
+[8.289896] (harurobo_pkg) StdoutLine: {'line': b'copying harurobo_pkg/serial_receive_node.py -> /home/altair/ros2_haru/build/harurobo_pkg/build/lib/harurobo_pkg\n'}
+[8.290117] (harurobo_pkg) StdoutLine: {'line': b'copying harurobo_pkg/web_socket_node.py -> /home/altair/ros2_haru/build/harurobo_pkg/build/lib/harurobo_pkg\n'}
+[8.290346] (harurobo_pkg) StdoutLine: {'line': b'copying harurobo_pkg/__init__.py -> /home/altair/ros2_haru/build/harurobo_pkg/build/lib/harurobo_pkg\n'}
+[8.290550] (harurobo_pkg) StdoutLine: {'line': b'copying harurobo_pkg/serial_send_node.py -> /home/altair/ros2_haru/build/harurobo_pkg/build/lib/harurobo_pkg\n'}
+[8.290769] (harurobo_pkg) StdoutLine: {'line': b'copying harurobo_pkg/can_node.py -> /home/altair/ros2_haru/build/harurobo_pkg/build/lib/harurobo_pkg\n'}
+[8.291315] (harurobo_pkg) StdoutLine: {'line': b'running install\n'}
+[8.297909] (harurobo_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[8.302520] (-) TimerEvent: {}
+[8.403830] (-) TimerEvent: {}
+[8.505270] (-) TimerEvent: {}
+[8.509703] (harurobo_pkg) StdoutLine: {'line': b'running install_data\n'}
+[8.513611] (harurobo_pkg) StdoutLine: {'line': b'copying resource/harurobo_pkg -> /home/altair/ros2_haru/install/harurobo_pkg/share/ament_index/resource_index/packages\n'}
+[8.517440] (harurobo_pkg) StdoutLine: {'line': b'copying package.xml -> /home/altair/ros2_haru/install/harurobo_pkg/share/harurobo_pkg\n'}
+[8.519426] (harurobo_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.605348] (-) TimerEvent: {}
+[8.650211] (harurobo_pkg) StdoutLine: {'line': b"removing '/home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.653385] (harurobo_pkg) StdoutLine: {'line': b'Copying ../../build/harurobo_pkg/harurobo_pkg.egg-info to /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info\n'}
+[8.662557] (harurobo_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[8.705503] (-) TimerEvent: {}
+[8.805952] (-) TimerEvent: {}
+[8.907294] (-) TimerEvent: {}
+[9.008728] (-) TimerEvent: {}
+[9.110018] (-) TimerEvent: {}
+[9.211276] (-) TimerEvent: {}
+[9.312609] (-) TimerEvent: {}
+[9.413756] (-) TimerEvent: {}
+[9.515203] (-) TimerEvent: {}
+[9.616707] (-) TimerEvent: {}
+[9.717768] (-) TimerEvent: {}
+[9.789879] (harurobo_pkg) StdoutLine: {'line': b'Installing can_node script to /home/altair/ros2_haru/install/harurobo_pkg/lib/harurobo_pkg\n'}
+[9.791606] (harurobo_pkg) StdoutLine: {'line': b'Installing planning_node script to /home/altair/ros2_haru/install/harurobo_pkg/lib/harurobo_pkg\n'}
+[9.793377] (harurobo_pkg) StdoutLine: {'line': b'Installing web_socket_node script to /home/altair/ros2_haru/install/harurobo_pkg/lib/harurobo_pkg\n'}
+[9.798379] (harurobo_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/altair/ros2_haru/build/harurobo_pkg/install.log'\n"}
+[9.818018] (-) TimerEvent: {}
+[9.918646] (-) TimerEvent: {}
+[9.933983] (harurobo_pkg) CommandEnded: {'returncode': 0}
+[9.988947] (harurobo_pkg) JobEnded: {'identifier': 'harurobo_pkg', 'rc': 0}
+[9.993082] (-) EventReactorShutdown: {}
