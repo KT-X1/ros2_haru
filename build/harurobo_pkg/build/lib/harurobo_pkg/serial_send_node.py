@@ -10,7 +10,7 @@ class SerialSendNode(Node):
 
         # CANバスの設定
         try:
-            self.bus = can.interface.Bus(channel='can0', bustype='socketcan')
+            self.bus = can.Bus(interface='socketcan', channel='can0')
         except OSError as e:
             self.get_logger().error(f"Could not access SocketCAN device can0: {e}")
             rclpy.shutdown()
@@ -38,8 +38,8 @@ class SerialSendNode(Node):
                 self.get_logger().info(f"Sent packed data 0x360: {data.hex()}")
                 self.get_logger().debug(f"Sent CAN message 0x360: {can_msg}")
                 self.get_logger().debug(f"Data sent - Vx: {vx}, Vy: {vy}, Omega: {omega}")
-            except can.CanError as e:
-                self.get_logger().error(f"Failed to send CAN message 0x360: {e}")
+            except can.CanError:
+                self.get_logger().error("Failed to send CAN message")
 
     def listener_callback(self, msg):
         if len(msg.data) == 5:
@@ -56,8 +56,8 @@ class SerialSendNode(Node):
                 self.get_logger().info(f"Sent packed data 0x160: {data_160.hex()}")
                 self.get_logger().debug(f"Sent CAN message 0x160: {msg_160}")
                 self.get_logger().debug(f"Data sent - Vx: {vx}, Vy: {vy}, Omega: {omega}")
-            except can.CanError as e:
-                self.get_logger().error(f"Failed to send CAN message 0x160: {e}")
+            except can.CanError:
+                self.get_logger().error("Failed to send CAN message")
 
             data_161 = struct.pack('>B', action_number)
             msg_161 = can.Message(arbitration_id=0x161, data=data_161, is_extended_id=False)
@@ -66,8 +66,8 @@ class SerialSendNode(Node):
                 self.get_logger().info(f"Sent packed data 0x161: {data_161.hex()}")
                 self.get_logger().debug(f"Sent CAN message 0x161: {msg_161}")
                 self.get_logger().debug(f"Data sent - Action Number: {action_number}")
-            except can.CanError as e:
-                self.get_logger().error(f"Failed to send CAN message 0x161: {e}")
+            except can.CanError:
+                self.get_logger().error("Failed to send CAN message")
 
             self.get_logger().info(f"Sent data: {msg.data}")
 

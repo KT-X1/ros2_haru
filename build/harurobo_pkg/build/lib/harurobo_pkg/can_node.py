@@ -4,9 +4,9 @@ from std_msgs.msg import Float32MultiArray
 import can
 import struct
 
-class SerialSendNode(Node):
+class CANNode(Node):
     def __init__(self):
-        super().__init__('serial_send_node')
+        super().__init__('can_node')
 
         # CANバスの設定
         try:
@@ -16,6 +16,7 @@ class SerialSendNode(Node):
             rclpy.shutdown()
             return
 
+        self.publisher_ = self.create_publisher(Float32MultiArray, 'robot_position', 10)
         self.subscription = self.create_subscription(
             Float32MultiArray,
             'send_can_message',
@@ -23,6 +24,7 @@ class SerialSendNode(Node):
             10
         )
         self.timer = self.create_timer(0.001, self.timer_callback)  # 1msに一回
+        self.action_number = 0
 
     def send_can_message_callback(self, msg):
         if len(msg.data) == 3:
@@ -41,42 +43,33 @@ class SerialSendNode(Node):
             except can.CanError:
                 self.get_logger().error("Failed to send CAN message")
 
-    def listener_callback(self, msg):
-        if len(msg.data) == 5:
-            vx = int(msg.data[0])  # Vx
-            vy = int(msg.data[1])  # Vy
-            omega = int(msg.data[2])  # ω
-            action_number = int(msg.data[4])  # 指示番号
-
-            # CANデータのパッキング
-            data_160 = struct.pack('>hhh', vx, vy, omega)
-            msg_160 = can.Message(arbitration_id=0x160, data=data_160, is_extended_id=False)
-            try:
-                self.bus.send(msg_160)  # CANバスに送信
-                self.get_logger().info(f"Sent packed data 0x160: {data_160.hex()}")
-                self.get_logger().debug(f"Sent CAN message 0x160: {msg_160}")
-                self.get_logger().debug(f"Data sent - Vx: {vx}, Vy: {vy}, Omega: {omega}")
-            except can.CanError:
-                self.get_logger().error("Failed to send CAN message")
-
-            data_161 = struct.pack('>B', action_number)
-            msg_161 = can.Message(arbitration_id=0x161, data=data_161, is_extended_id=False)
-            try:
-                self.bus.send(msg_161)  # CANバスに送信
-                self.get_logger().info(f"Sent packed data 0x161: {data_161.hex()}")
-                self.get_logger().debug(f"Sent CAN message 0x161: {msg_161}")
-                self.get_logger().debug(f"Data sent - Action Number: {action_number}")
-            except can.CanError:
-                self.get_logger().error("Failed to send CAN message")
-
-            self.get_logger().info(f"Sent data: {msg.data}")
-
     def timer_callback(self):
-        pass  # タイマーコールバックの追加
+        msg = self.bus.recv(timeout=0.1)
+        if msg is not None:
+            if msg.arbitration_id == 0x360:
+                self.get_logger().debug(f"Received CAN message: {msg}")
+                try:
+                    # CANデータのアンパッキング
+                    x = struct.unpack('>h', msg.data[0:2])[0]
+                    y = struct.unpack('>h', msg.data[2:4])[0]
+                    theta = struct.unpack('>h', msg.data[4:6])[0]
+                    command_msg = Float32MultiArray()
+                    command_msg.data = [float(x), float(y), float(theta), float(self.action_number)]
+                    self.publisher_.publish(command_msg)
+                    self.get_logger().info(f"Published command data: {command_msg.data}")
+                except struct.error as e:
+                    self.get_logger().error(f"Unpacking error: {e}")
+            elif msg.arbitration_id == 0x151:
+                self.get_logger().debug(f"Received CAN message: {msg}")
+                try:
+                    self.action_number = struct.unpack('>B', msg.data)[0]
+                    self.get_logger().info(f"Updated action number: {self.action_number}")
+                except struct.error as e:
+                    self.get_logger().error(f"Unpacking error: {e}")
 
 def main(args=None):
     rclpy.init(args=args)
-    node = SerialSendNode()
+    node = CANNode()
     if node.bus:
         rclpy.spin(node)
         node.destroy_node()

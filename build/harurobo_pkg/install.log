@@ -3,11 +3,13 @@
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/web_socket_node.py
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/__init__.py
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/serial_send_node.py
+/home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/can_node.py
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/__pycache__/planning_node.cpython-310.pyc
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/__pycache__/serial_receive_node.cpython-310.pyc
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/__pycache__/web_socket_node.cpython-310.pyc
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/__pycache__/__init__.cpython-310.pyc
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/__pycache__/serial_send_node.cpython-310.pyc
+/home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg/__pycache__/can_node.cpython-310.pyc
 /home/altair/ros2_haru/install/harurobo_pkg/share/ament_index/resource_index/packages/harurobo_pkg
 /home/altair/ros2_haru/install/harurobo_pkg/share/harurobo_pkg/package.xml
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info/dependency_links.txt
@@ -17,7 +19,6 @@
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info/entry_points.txt
 /home/altair/ros2_haru/install/harurobo_pkg/lib/python3.10/site-packages/harurobo_pkg-0.0.0-py3.10.egg-info/zip-safe
+/home/altair/ros2_haru/install/harurobo_pkg/lib/harurobo_pkg/can_node
 /home/altair/ros2_haru/install/harurobo_pkg/lib/harurobo_pkg/planning_node
-/home/altair/ros2_haru/install/harurobo_pkg/lib/harurobo_pkg/serial_receive_node
-/home/altair/ros2_haru/install/harurobo_pkg/lib/harurobo_pkg/serial_send_node
 /home/altair/ros2_haru/install/harurobo_pkg/lib/harurobo_pkg/web_socket_node
