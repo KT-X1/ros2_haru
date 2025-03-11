@@ -13,38 +13,41 @@ class SerialToPositionNode(Node):
         self.timer = self.create_timer(0.1, self.timer_callback)  # より頻繁にバッファをチェックするためのタイマー
         self.buffer = b''
 
+    def read_frame(ser):
+        while True:
+            first_byte = ser.read(1)
+            if (first_byte == b'\xA5'):
+                second_byte = ser.read(1)
+                if (second_byte == b'\xA5'):
+                    break
+        payload = ser.read(4)
+        return payload
+
     def timer_callback(self):
         if self.ser.in_waiting > 0:
             self.buffer += self.ser.read(self.ser.in_waiting)
 
-        # バッファに完全なパケット（18バイト、16バイトのデータ + 1バイトのシーケンス番号 + 1バイトのチェックサム）が含まれているか確認
-        while len(self.buffer) >= 18:
+        # バッファに完全なパケット（8バイト、6バイトのデータ + 2バイトのプレフィックス）が含まれているか確認
+        while len(self.buffer) >= 8:
             # パケットの開始を見つける
             start = self.buffer.find(b'\xA5\xA5')
-            if start != -1 and len(self.buffer[start:]) >= 18:
-                data = self.buffer[start+2:start+16]
-                seq = self.buffer[start+16]
-                received_checksum = self.buffer[start+17]
-                self.buffer = self.buffer[start+18:]
-                #calculated_checksum = sum(data) % 256
-
-                #if calculated_checksum == received_checksum:
-                    #try:
-                position_data = struct.unpack('fffBB', data)
-                position_msg = Float32MultiArray()
-                position_msg.data = [
-                    float(position_data[0]),  # x
-                    float(position_data[1]),  # y
-                    float(position_data[2]),  # theta
-                    float(position_data[3]),  # team color
-                    float(position_data[4])   # action number
-                ]
-                self.publisher_.publish(position_msg)
-                self.get_logger().info(f"Published position data: {position_msg.data}")
-                   # except struct.error as e:
-                        #self.get_logger().error(f"Unpacking error: {e}")
-                #else:
-                    #self.get_logger().error(f"Checksum error: received {received_checksum}, calculated {calculated_checksum}")
+            if start != -1 and len(self.buffer[start:]) >= 8:
+                data = self.buffer[start+2:start+8]
+                self.buffer = self.buffer[start+8:]
+                try:
+                    command_data = struct.unpack('>BBhhh', data)
+                    command_msg = Float32MultiArray()
+                    command_msg.data = [
+                        float(command_data[0]),  # 指示番号
+                        float(command_data[1]),  # モード
+                        float(command_data[2]),  # Vx
+                        float(command_data[3]),  # Vy
+                        float(command_data[4])   # ω
+                    ]
+                    self.publisher_.publish(command_msg)
+                    self.get_logger().info(f"Published command data: {command_msg.data}")
+                except struct.error as e:
+                    self.get_logger().error(f"Unpacking error: {e}")
             else:
                 # プレフィックスが正しくない場合、またはデータが不十分な場合、最初のバイトを破棄して再試行
                 self.buffer = self.buffer[start+1:] if start != -1 else self.buffer[1:]

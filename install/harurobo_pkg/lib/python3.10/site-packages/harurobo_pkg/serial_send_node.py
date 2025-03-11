@@ -19,14 +19,14 @@ class SerialSendNode(Node):
 
     def listener_callback(self, msg):
         if len(msg.data) == 5:
-            command_number = int(msg.data[0])  # 指示番号
-            mode = int(msg.data[1])  # モード
-            Vx = int(msg.data[2])  # x方向の速度 [mm/s]
-            Vy = int(msg.data[3])  # y方向の速度 [mm/s]
-            omega = int(msg.data[4])  # 角速度 [deg/s]
+            action_number = int(msg.data[0])  # 動作番号
+            team_color = int(msg.data[1])  # チームカラー
+            x = int(msg.data[2])  # X座標
+            y = int(msg.data[3])  # Y座標
+            theta = int(msg.data[4])  # 角度
 
             # シリアルデータのパッキング
-            data = struct.pack('>BBhhh', command_number, mode, Vx, Vy, omega)
+            data = struct.pack('>BBhhh', action_number, team_color, x, y, theta)
             packet = b'\xA5\xA5' + data  # ヘッダー + データ
             self.ser.write(packet)  # シリアルポートに送信
             self.get_logger().info(f"Sent data: {msg.data}")
