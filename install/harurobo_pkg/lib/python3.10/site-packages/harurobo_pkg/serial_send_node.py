@@ -9,7 +9,7 @@ class SerialSendNode(Node):
         super().__init__('serial_send_node')
 
         # シリアルポートの設定
-        self.ser = serial.Serial('/dev/ttyACM0', baudrate=115200)
+        self.ser = serial.Serial('/dev/ttyACM1', baudrate=115200)
         self.subscription = self.create_subscription(
             Float32MultiArray,
             'cmd_vel',

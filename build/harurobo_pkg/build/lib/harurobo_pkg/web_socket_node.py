@@ -12,7 +12,7 @@ IP_ADDRESS = '172.20.10.5' #'192.168.98.216'
 PORT = 8010
 
 # UIファイル（`R1_UI.txt`）のパス
-UI_PATH = '/home/taichi/ros2/src/harurobo_pkg/R1_UI.txt' #'/home/altair/2024_A_ROS2_Roboware/src/robot_controller/R1_UI.txt'
+UI_PATH = '/home/altair/ros2_haru/src/harurobo_pkg/R1_UI.txt'  # 修正されたパス
 
 # FastAPIのインスタンスを作成
 app = FastAPI()
