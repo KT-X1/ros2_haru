@@ -9,34 +9,58 @@ class SerialSendNode(Node):
         super().__init__('serial_send_node')
 
         # CANバスの設定
-        self.bus = can.interface.Bus(channel='can0', bustype='socketcan')
+        try:
+            self.bus = can.interface.Bus(channel='can0', bustype='socketcan')
+        except OSError as e:
+            self.get_logger().error(f"Could not access SocketCAN device can0: {e}")
+            rclpy.shutdown()
+            return
+
         self.subscription = self.create_subscription(
             Float32MultiArray,
             'cmd_vel',
             self.listener_callback,
             10
         )
+        self.timer = self.create_timer(0.001, self.timer_callback)  # 1msに一回
 
     def listener_callback(self, msg):
         if len(msg.data) == 5:
-            action_number = int(msg.data[0])  # 動作番号
-            team_color = int(msg.data[1])  # チームカラー
-            x = int(msg.data[2])  # X座標
-            y = int(msg.data[3])  # Y座標
-            theta = int(msg.data[4])  # 角度
+            vx = int(msg.data[0])  # Vx
+            vy = int(msg.data[1])  # Vy
+            omega = int(msg.data[2])  # ω
+            action_number = int(msg.data[4])  # 指示番号
 
             # CANデータのパッキング
-            data = struct.pack('>BBhhh', action_number, team_color, x, y, theta)
-            msg = can.Message(arbitration_id=0x160, data=data, is_extended_id=False)
-            self.bus.send(msg)  # CANバスに送信
+            data_160 = struct.pack('>hhh', vx, vy, omega)
+            msg_160 = can.Message(arbitration_id=0x160, data=data_160, is_extended_id=False)
+            try:
+                self.bus.send(msg_160)  # CANバスに送信
+                self.get_logger().info(f"Sent packed data 0x160: {data_160.hex()}")
+                self.get_logger().debug(f"Sent CAN message 0x160: {msg_160}")
+            except can.CanError as e:
+                self.get_logger().error(f"Failed to send CAN message 0x160: {e}")
+
+            data_161 = struct.pack('>B', action_number)
+            msg_161 = can.Message(arbitration_id=0x161, data=data_161, is_extended_id=False)
+            try:
+                self.bus.send(msg_161)  # CANバスに送信
+                self.get_logger().info(f"Sent packed data 0x161: {data_161.hex()}")
+                self.get_logger().debug(f"Sent CAN message 0x161: {msg_161}")
+            except can.CanError as e:
+                self.get_logger().error(f"Failed to send CAN message 0x161: {e}")
+
             self.get_logger().info(f"Sent data: {msg.data}")
-            self.get_logger().info(f"Sent packed data: {data.hex()}")
+
+    def timer_callback(self):
+        pass  # タイマーコールバックの追加
 
 def main(args=None):
     rclpy.init(args=args)
     node = SerialSendNode()
-    rclpy.spin(node)
-    node.destroy_node()
+    if node.bus:
+        rclpy.spin(node)
+        node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':

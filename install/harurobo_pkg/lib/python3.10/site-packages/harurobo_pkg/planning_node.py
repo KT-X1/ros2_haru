@@ -20,6 +20,8 @@ class ControllerNode(Node):
             self.update_position_callback,
             10)
 
+        self.timer = self.create_timer(0.001, self.timer_callback)  # 1msに一回
+
         # 地点の座標を設定
         self.locations_normal = {
             '1': [500, 500, 0],  # [x, y, theta]
@@ -100,6 +102,10 @@ class ControllerNode(Node):
         msg.data = [float(speed), float(direction), float(angular_speed), float(team_color), float(action_number)]
         self.publisher_.publish(msg)
         self.get_logger().info(f"Sent velocity command: {msg.data}")
+        self.get_logger().debug(f"Velocity command details - Speed: {speed}, Direction: {direction}, Angular Speed: {angular_speed}, Team Color: {team_color}, Action Number: {action_number}")
+
+    def timer_callback(self):
+        pass  # タイマーコールバックの追加
 
 def main(args=None):
     rclpy.init(args=args)

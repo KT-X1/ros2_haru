@@ -1,7 +1,12 @@
 #!/bin/bash
+#sudo modprobe slcan
+#sudo modprobe can
+#sudo modprobe can_raw
 
-# ROS 2環境のセットアップ
-colcon build > /dev/null 2>&1
+#sudo slcand -o -c -s8 /dev/ttyACM1 can0
+#sudo ip link set can0 up
+
+colcon build
 source /opt/ros/humble/setup.bash
 source install/setup.bash
 

@@ -1,62 +1,54 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray
-import serial
+import can
 import struct
 
 class SerialToPositionNode(Node):
     def __init__(self):
         super().__init__('serial_receive_node')
 
-        self.ser = serial.Serial("/dev/ttyACM0", baudrate=9600)
-        self.publisher_ = self.create_publisher(Float32MultiArray, 'robot_position', 10) #(serial_receive_node->(robot_position)->position_node
-        self.timer = self.create_timer(0.1, self.timer_callback)  # より頻繁にバッファをチェックするためのタイマー
-        self.buffer = b''
+        try:
+            self.bus = can.interface.Bus(channel='can0', bustype='socketcan')
+        except OSError as e:
+            self.get_logger().error(f"Could not access SocketCAN device can0: {e}")
+            rclpy.shutdown()
+            return
 
-    def read_frame(ser):
-        while True:
-            first_byte = ser.read(1)
-            if (first_byte == b'\xA5'):
-                second_byte = ser.read(1)
-                if (second_byte == b'\xA5'):
-                    break
-        payload = ser.read(4)
-        return payload
+        self.publisher_ = self.create_publisher(Float32MultiArray, 'robot_position', 10)
+        self.timer = self.create_timer(0.001, self.timer_callback)  # 1msに一回
+        self.action_number = 0
 
     def timer_callback(self):
-        if self.ser.in_waiting > 0:
-            self.buffer += self.ser.read(self.ser.in_waiting)
-
-        # バッファに完全なパケット（8バイト、6バイトのデータ + 2バイトのプレフィックス）が含まれているか確認
-        while len(self.buffer) >= 8:
-            # パケットの開始を見つける
-            start = self.buffer.find(b'\xA5\xA5')
-            if start != -1 and len(self.buffer[start:]) >= 8:
-                data = self.buffer[start+2:start+8]
-                self.buffer = self.buffer[start+8:]
+        msg = self.bus.recv(timeout=0.1)
+        if msg is not None:
+            if msg.arbitration_id == 0x360:
+                self.get_logger().debug(f"Received CAN message: {msg}")
                 try:
-                    command_data = struct.unpack('>BBhhh', data)
+                    # CANデータのアンパッキング
+                    x = struct.unpack('>h', msg.data[0:2])[0]
+                    y = struct.unpack('>h', msg.data[2:4])[0]
+                    theta = struct.unpack('>h', msg.data[4:6])[0]
                     command_msg = Float32MultiArray()
-                    command_msg.data = [
-                        float(command_data[0]),  # 指示番号
-                        float(command_data[1]),  # モード
-                        float(command_data[2]),  # Vx
-                        float(command_data[3]),  # Vy
-                        float(command_data[4])   # ω
-                    ]
+                    command_msg.data = [float(x), float(y), float(theta), float(self.action_number)]
                     self.publisher_.publish(command_msg)
                     self.get_logger().info(f"Published command data: {command_msg.data}")
                 except struct.error as e:
                     self.get_logger().error(f"Unpacking error: {e}")
-            else:
-                # プレフィックスが正しくない場合、またはデータが不十分な場合、最初のバイトを破棄して再試行
-                self.buffer = self.buffer[start+1:] if start != -1 else self.buffer[1:]
+            elif msg.arbitration_id == 0x151:
+                self.get_logger().debug(f"Received CAN message: {msg}")
+                try:
+                    self.action_number = struct.unpack('>B', msg.data)[0]
+                    self.get_logger().info(f"Updated action number: {self.action_number}")
+                except struct.error as e:
+                    self.get_logger().error(f"Unpacking error: {e}")
 
 def main(args=None):
     rclpy.init(args=args)
     node = SerialToPositionNode()
-    rclpy.spin(node)
-    node.destroy_node()
+    if node.bus:
+        rclpy.spin(node)
+        node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':

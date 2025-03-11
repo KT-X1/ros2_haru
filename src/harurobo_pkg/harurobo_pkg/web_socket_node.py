@@ -8,7 +8,7 @@ import uvicorn
 import os
 
 # IPアドレスとポート設定
-IP_ADDRESS = '172.20.10.5' #'192.168.98.216'
+IP_ADDRESS = '192.168.75.216' #'192.168.98.216'
 PORT = 8010
 
 # UIファイル（`R1_UI.txt`）のパス
@@ -29,6 +29,7 @@ class WebSocketNode(Node):
         self.send_data = ''
         self.pub = self.create_publisher(String, 'web_socket_pub', 10)
         self.sub = self.create_subscription(Float32MultiArray, 'robot_position', self.callback, 10) #estimated_position->robot_positionに変更
+        self.timer = self.create_timer(0.001, self.timer_callback)  # 1msに一回
 
         @app.get("/")
         async def get():
@@ -43,14 +44,19 @@ class WebSocketNode(Node):
                     msg = String()
                     msg.data = receive_data
                     self.pub.publish(msg)
+                    self.get_logger().info(f"Received data from WebSocket: {receive_data}")
 
                     string_send_data = ",".join(map(str, self.send_data))
                     await websocket.send_text(string_send_data)
+                    self.get_logger().info(f"Sent data to WebSocket: {string_send_data}")
             except Exception as e:
-                print(f'WebSocket error: {str(e)}')
+                self.get_logger().error(f'WebSocket error: {str(e)}')
 
     def callback(self, sub_msg):
         self.send_data = sub_msg.data
+
+    def timer_callback(self):
+        pass  # タイマーコールバックの追加
 
 def run_ros2():
     rclpy.init()
