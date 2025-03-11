@@ -27,19 +27,21 @@ class CANNode(Node):
         self.action_number = 0
 
     def send_can_message_callback(self, msg):
+        self.get_logger().info(f"send_can_message_callback called with data: {msg.data}")
         if len(msg.data) == 3:
-            vx = int(msg.data[0])  # Vx
-            vy = int(msg.data[1])  # Vy
-            omega = int(msg.data[2])  # ω
+            vx = float(msg.data[0])  # Vx
+            vy = float(msg.data[1])  # Vy
+            omega = float(msg.data[2])  # ω
 
             # CANデータのパッキング
-            data = struct.pack('>hhh', vx, vy, omega)
+            data = struct.pack('>hhh', int(vx), int(vy), int(omega))
             can_msg = can.Message(arbitration_id=0x360, data=data, is_extended_id=False)
             try:
                 self.bus.send(can_msg)  # CANバスに送信
                 self.get_logger().info(f"Sent packed data 0x360: {data.hex()}")
                 self.get_logger().debug(f"Sent CAN message 0x360: {can_msg}")
                 self.get_logger().debug(f"Data sent - Vx: {vx}, Vy: {vy}, Omega: {omega}")
+                self.get_logger().info(f"送信[{vx}, {vy}, {omega}]")
             except can.CanError:
                 self.get_logger().error("Failed to send CAN message")
 
@@ -56,14 +58,13 @@ class CANNode(Node):
                     command_msg = Float32MultiArray()
                     command_msg.data = [float(x), float(y), float(theta), float(self.action_number)]
                     self.publisher_.publish(command_msg)
-                    self.get_logger().info(f"Published command data: {command_msg.data}")
+                    self.get_logger().info(f"受信[{x}, {y}, {theta}, {self.action_number}]")
                 except struct.error as e:
                     self.get_logger().error(f"Unpacking error: {e}")
             elif msg.arbitration_id == 0x151:
                 self.get_logger().debug(f"Received CAN message: {msg}")
                 try:
                     self.action_number = struct.unpack('>B', msg.data)[0]
-                    self.get_logger().info(f"Updated action number: {self.action_number}")
                 except struct.error as e:
                     self.get_logger().error(f"Unpacking error: {e}")
 
