@@ -18,11 +18,28 @@ class SerialSendNode(Node):
 
         self.subscription = self.create_subscription(
             Float32MultiArray,
-            'cmd_vel',
-            self.listener_callback,
+            'send_can_message',
+            self.send_can_message_callback,
             10
         )
         self.timer = self.create_timer(0.001, self.timer_callback)  # 1msに一回
+
+    def send_can_message_callback(self, msg):
+        if len(msg.data) == 3:
+            vx = int(msg.data[0])  # Vx
+            vy = int(msg.data[1])  # Vy
+            omega = int(msg.data[2])  # ω
+
+            # CANデータのパッキング
+            data = struct.pack('>hhh', vx, vy, omega)
+            can_msg = can.Message(arbitration_id=0x360, data=data, is_extended_id=False)
+            try:
+                self.bus.send(can_msg)  # CANバスに送信
+                self.get_logger().info(f"Sent packed data 0x360: {data.hex()}")
+                self.get_logger().debug(f"Sent CAN message 0x360: {can_msg}")
+                self.get_logger().debug(f"Data sent - Vx: {vx}, Vy: {vy}, Omega: {omega}")
+            except can.CanError as e:
+                self.get_logger().error(f"Failed to send CAN message 0x360: {e}")
 
     def listener_callback(self, msg):
         if len(msg.data) == 5:
@@ -38,6 +55,7 @@ class SerialSendNode(Node):
                 self.bus.send(msg_160)  # CANバスに送信
                 self.get_logger().info(f"Sent packed data 0x160: {data_160.hex()}")
                 self.get_logger().debug(f"Sent CAN message 0x160: {msg_160}")
+                self.get_logger().debug(f"Data sent - Vx: {vx}, Vy: {vy}, Omega: {omega}")
             except can.CanError as e:
                 self.get_logger().error(f"Failed to send CAN message 0x160: {e}")
 
@@ -47,6 +65,7 @@ class SerialSendNode(Node):
                 self.bus.send(msg_161)  # CANバスに送信
                 self.get_logger().info(f"Sent packed data 0x161: {data_161.hex()}")
                 self.get_logger().debug(f"Sent CAN message 0x161: {msg_161}")
+                self.get_logger().debug(f"Data sent - Action Number: {action_number}")
             except can.CanError as e:
                 self.get_logger().error(f"Failed to send CAN message 0x161: {e}")
 

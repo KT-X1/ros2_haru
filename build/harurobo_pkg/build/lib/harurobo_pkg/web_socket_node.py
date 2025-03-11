@@ -9,7 +9,7 @@ import os
 
 # IPアドレスとポート設定
 IP_ADDRESS = '192.168.75.216' #'192.168.98.216'
-PORT = 8010
+PORT = 8080
 
 # UIファイル（`R1_UI.txt`）のパス
 UI_PATH = '/home/altair/ros2_haru/src/harurobo_pkg/R1_UI.txt'  # 修正されたパス
