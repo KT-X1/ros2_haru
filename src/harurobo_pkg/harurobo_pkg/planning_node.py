@@ -54,16 +54,18 @@ class ControllerNode(Node):
         self.get_logger().info(f"Updated current position: {self.current_position}")
 
     def listener_callback(self, msg):
-        data = msg.data.split(',')
-        self.mode = int(data[8])  # モード（0か1）を受け取る
-        emergency_stop = int(data[9])
-
-        self.get_logger().info(f"Received data: {data}")
-
-        # 非常停止処理
-        if emergency_stop == 1:
-            self.send_velocity_command(0.0, 0.0, 0.0, self.mode, float(255))
+        data = msg.data.split('_')
+        if len(data) < 2:
+            self.get_logger().error("Received data is too short")
             return
+        command_type, command_value = data[0], data[1]
+
+        self.get_logger().info(f"Received command: {command_type}_{command_value}")
+
+        if command_type == 'action':
+            self.send_velocity_command(0.0, 0.0, 0.0, self.mode, float(command_value))
+        elif command_type == 'move':
+            self.move_to_target(self.locations[command_value], float(self.mode), float(0))
 
     def move_to_target(self, target, team_color, action_number):
         x, y, target_theta = target

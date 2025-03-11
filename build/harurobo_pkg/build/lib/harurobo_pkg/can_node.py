@@ -64,7 +64,7 @@ class CANNode(Node):
         except can.CanError:
             self.get_logger().error("Failed to send CAN message 0x160")
 
-        action_number = 3
+        action_number = 0
         data_161 = struct.pack('>B', action_number)
         can_msg_161 = can.Message(arbitration_id=0x161, data=data_161, is_extended_id=False)
         try:

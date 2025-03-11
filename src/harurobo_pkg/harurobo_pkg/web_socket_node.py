@@ -8,11 +8,11 @@ import uvicorn
 import os
 
 # IPアドレスとポート設定
-IP_ADDRESS = '192.168.75.216' #'192.168.98.216'
+IP_ADDRESS = '192.168.75.216'
 PORT = 8080
 
 # UIファイル（`R1_UI.txt`）のパス
-UI_PATH = '/home/altair/ros2_haru/src/harurobo_pkg/R1_UI.txt'  # 修正されたパス
+UI_PATH = '/home/altair/ros2_haru/src/harurobo_pkg/R1_UI.txt'
 
 # FastAPIのインスタンスを作成
 app = FastAPI()
@@ -28,8 +28,9 @@ class WebSocketNode(Node):
         super().__init__('web_socket_node')
         self.send_data = ''
         self.pub = self.create_publisher(String, 'web_socket_pub', 10)
-        self.sub = self.create_subscription(Float32MultiArray, 'robot_position', self.callback, 10) #estimated_position->robot_positionに変更
+        self.sub = self.create_subscription(Float32MultiArray, 'robot_position', self.callback, 10)
         self.timer = self.create_timer(0.001, self.timer_callback)  # 1msに一回
+        self.current_command = ''
 
         @app.get("/")
         async def get():
@@ -41,14 +42,8 @@ class WebSocketNode(Node):
             try:
                 while True:
                     receive_data = await websocket.receive_text()
-                    msg = String()
-                    msg.data = receive_data
-                    self.pub.publish(msg)
+                    self.current_command = receive_data
                     self.get_logger().info(f"Received data from WebSocket: {receive_data}")
-
-                    string_send_data = ",".join(map(str, self.send_data))
-                    await websocket.send_text(string_send_data)
-                    self.get_logger().info(f"Sent data to WebSocket: {string_send_data}")
             except Exception as e:
                 self.get_logger().error(f'WebSocket error: {str(e)}')
 
@@ -56,7 +51,11 @@ class WebSocketNode(Node):
         self.send_data = sub_msg.data
 
     def timer_callback(self):
-        pass  # タイマーコールバックの追加
+        if self.current_command:
+            msg = String()
+            msg.data = self.current_command
+            self.pub.publish(msg)
+            self.get_logger().info(f"Sent data to ROS: {self.current_command}")
 
 def run_ros2():
     rclpy.init()
