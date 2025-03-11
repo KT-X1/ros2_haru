@@ -55,29 +55,27 @@ class CANNode(Node):
                 self.get_logger().error("Failed to send CAN message 0x161")
 
     def timer_callback(self):
-        # 最後のメッセージ受信から100ms以上経過している場合、0を送信
-        if (self.get_clock().now() - self.last_msg_time).nanoseconds > 100000000:
-            vx, vy, omega = 1.0, 2.0, 3.0
-            data_160 = struct.pack('>hhh', int(vx), int(vy), int(omega))
-            can_msg_160 = can.Message(arbitration_id=0x160, data=data_160, is_extended_id=False)
-            try:
-                self.bus.send(can_msg_160)  # CANバスに送信
-                self.get_logger().info(f"送信[0x160: {data_160.hex()}] 送信[{vx}, {vy}, {omega}]")
-            except can.CanError:
-                self.get_logger().error("Failed to send CAN message 0x160")
+        vx, vy, omega = 0.0, 0.0, 0.0
+        data_160 = struct.pack('>hhh', int(vx), int(vy), int(omega))
+        can_msg_160 = can.Message(arbitration_id=0x160, data=data_160, is_extended_id=False)
+        try:
+            self.bus.send(can_msg_160)  # CANバスに送信
+            self.get_logger().info(f"送信[0x160: {data_160.hex()}] 送信[{vx}, {vy}, {omega}]")
+        except can.CanError:
+            self.get_logger().error("Failed to send CAN message 0x160")
 
-            action_number = 0
-            data_161 = struct.pack('>B', action_number)
-            can_msg_161 = can.Message(arbitration_id=0x161, data=data_161, is_extended_id=False)
-            try:
-                self.bus.send(can_msg_161)  # CANバスに送信
-                self.get_logger().info(f"送信[0x161: {data_161.hex()}] 送信[Action Number: {action_number}]")
-            except can.CanError:
-                self.get_logger().error("Failed to send CAN message 0x161")
+        action_number = 3
+        data_161 = struct.pack('>B', action_number)
+        can_msg_161 = can.Message(arbitration_id=0x161, data=data_161, is_extended_id=False)
+        try:
+            self.bus.send(can_msg_161)  # CANバスに送信
+            self.get_logger().info(f"送信[0x161: {data_161.hex()}] 送信[Action Number: {action_number}]")
+        except can.CanError:
+            self.get_logger().error("Failed to send CAN message 0x161")
 
-        msg = self.bus.recv(timeout=0.1)
+        msg = self.bus.recv(timeout=0.001)  # タイムアウトを短く設定
         if msg is not None:
-            if msg.arbitration_id == 0x150:
+            if msg.arbitration_id == 0x360:
                 self.get_logger().debug(f"Received CAN message: {msg}")
                 try:
                     # CANデータのアンパッキング
@@ -87,7 +85,7 @@ class CANNode(Node):
                     command_msg = Float32MultiArray()
                     command_msg.data = [float(x), float(y), float(theta), float(self.action_number)]
                     self.publisher_.publish(command_msg)
-                    self.get_logger().info(f"受信[0x150: {msg.data.hex()}] 受信[{x}, {y}, {theta}, {self.action_number}]")
+                    self.get_logger().info(f"受信[0x360: {msg.data.hex()}] 受信[{x}, {y}, {theta}, {self.action_number}]")
                 except struct.error as e:
                     self.get_logger().error(f"Unpacking error: {e}")
             elif msg.arbitration_id == 0x151:

@@ -11,8 +11,6 @@ setup.py
 harurobo_pkg/__init__.py
 harurobo_pkg/can_node.py
 harurobo_pkg/planning_node.py
-harurobo_pkg/serial_receive_node.py
-harurobo_pkg/serial_send_node.py
 harurobo_pkg/web_socket_node.py
 resource/harurobo_pkg
 test/test_copyright.py

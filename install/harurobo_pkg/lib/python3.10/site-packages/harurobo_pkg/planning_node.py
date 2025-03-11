@@ -20,7 +20,7 @@ class ControllerNode(Node):
             self.update_position_callback,
             10)
 
-        self.timer = self.create_timer(0.001, self.timer_callback)  # 1msに一回
+        self.timer = self.create_timer(0.0001, self.timer_callback)  # 0.1msに一回
 
         # 地点の座標を設定
         self.locations_normal = {
