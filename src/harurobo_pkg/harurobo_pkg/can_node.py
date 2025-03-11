@@ -57,7 +57,7 @@ class CANNode(Node):
     def timer_callback(self):
         # 最後のメッセージ受信から100ms以上経過している場合、0を送信
         if (self.get_clock().now() - self.last_msg_time).nanoseconds > 100000000:
-            vx, vy, omega = 1.0, 2.0, 3.0
+            vx, vy, omega = 0.0, 0.0, 0.0
             data_160 = struct.pack('>hhh', int(vx), int(vy), int(omega))
             can_msg_160 = can.Message(arbitration_id=0x160, data=data_160, is_extended_id=False)
             try:
