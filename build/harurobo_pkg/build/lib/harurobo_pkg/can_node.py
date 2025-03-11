@@ -20,7 +20,7 @@ class CANNode(Node):
         self.publisher_ = self.create_publisher(Float32MultiArray, 'robot_position', 10)
         self.subscription = self.create_subscription(
             Float32MultiArray,
-            'send_can_message',
+            'cmd_vel',  # トピック名を変更
             self.send_can_message_callback,
             10
         )
@@ -31,11 +31,12 @@ class CANNode(Node):
     def send_can_message_callback(self, msg):
         self.get_logger().info(f"send_can_message_callback called with data: {msg.data}")
         self.last_msg_time = self.get_clock().now()
-        if len(msg.data) == 4:
+        if len(msg.data) == 5:  # データ長を5に変更
             vx = float(msg.data[0])  # Vx
             vy = float(msg.data[1])  # Vy
             omega = float(msg.data[2])  # ω
-            action_number = int(msg.data[3])  # 指示番号
+            team_color = int(msg.data[3])  # チームカラー
+            action_number = int(msg.data[4])  # 指示番号
 
             # CANデータのパッキング
             data_160 = struct.pack('>hhh', int(vx), int(vy), int(omega))
@@ -46,11 +47,11 @@ class CANNode(Node):
             except can.CanError:
                 self.get_logger().error("Failed to send CAN message 0x160")
 
-            data_161 = struct.pack('>B', action_number)
+            data_161 = struct.pack('>BB', team_color, action_number)
             can_msg_161 = can.Message(arbitration_id=0x161, data=data_161, is_extended_id=False)
             try:
                 self.bus.send(can_msg_161)  # CANバスに送信
-                self.get_logger().info(f"送信[0x161: {data_161.hex()}] 送信[Action Number: {action_number}]")
+                self.get_logger().info(f"送信[0x161: {data_161.hex()}] 送信[Team Color: {team_color}, Action Number: {action_number}]")
             except can.CanError:
                 self.get_logger().error("Failed to send CAN message 0x161")
 

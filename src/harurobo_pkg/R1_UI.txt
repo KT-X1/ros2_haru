@@ -1,79 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
-    <title>Robot Control Interface</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ロボット位置表示</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-        .button { padding: 10px 20px; margin: 5px; font-size: 16px; }
-        .button.active { background-color: #4CAF50; color: white; }
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .position-container {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .map {
+            position: relative;
+            width: 90vw;
+            max-width: 600px;
+            height: 90vw;
+            max-height: 600px;
+            background: url('./background.jpg') no-repeat center center;
+            background-size: cover;
+            border: 2px solid white;
+            margin: 20px auto;
+        }
+
+        .robot {
+            position: absolute;
+            width: 5%;
+            height: 5%;
+            background-color: blue;
+            border-radius: 50%;
+            transform-origin: center;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            transition: background 0.2s;
+        }
+
+        .btn-start-left {
+            background-color: red;
+            color: white;
+        }
+
+        .btn-start-right {
+            background-color: blue;
+            color: white;
+        }
+
+        .btn-send-start {
+            background-color: green;
+            color: white;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* スマホ対応 */
+        @media (max-width: 600px) {
+            .btn {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Robot Control Interface</h1>
-        <div>
-            <button class="button" onclick="toggleButton(this, 'start')">Start</button>
-            <button class="button" onclick="toggleButton(this, 'stop')">Stop</button>
-        </div>
-        <div>
-            <h2>Actions</h2>
-            <button class="button" onclick="toggleButton(this, 'action_1')">Action 1</button>
-            <button class="button" onclick="toggleButton(this, 'action_2')">Action 2</button>
-            <button class="button" onclick="toggleButton(this, 'action_3')">Action 3</button>
-            <button class="button" onclick="toggleButton(this, 'action_4')">Action 4</button>
-        </div>
-        <div>
-            <h2>Move to Position</h2>
-            <button class="button" onclick="toggleButton(this, 'move_1')">Position 1</button>
-            <button class="button" onclick="toggleButton(this, 'move_2')">Position 2</button>
-            <button class="button" onclick="toggleButton(this, 'move_3')">Position 3</button>
-            <button class="button" onclick="toggleButton(this, 'move_4')">Position 4</button>
-            <button class="button" onclick="toggleButton(this, 'move_5')">Position 5</button>
-            <button class="button" onclick="toggleButton(this, 'move_6')">Position 6</button>
-            <button class="button" onclick="toggleButton(this, 'move_7')">Position 7</button>
-            <button class="button" onclick="toggleButton(this, 'move_8')">Position 8</button>
-            <button class="button" onclick="toggleButton(this, 'move_9')">Position 9</button>
-            <button class="button" onclick="toggleButton(this, 'move_10')">Position 10</button>
-            <button class="button" onclick="toggleButton(this, 'move_11')">Position 11</button>
-            <button class="button" onclick="toggleButton(this, 'move_12')">Position 12</button>
-            <button class="button" onclick="toggleButton(this, 'move_13')">Position 13</button>
-            <button class="button" onclick="toggleButton(this, 'move_14')">Position 14</button>
-            <button class="button" onclick="toggleButton(this, 'move_15')">Position 15</button>
-            <button class="button" onclick="toggleButton(this, 'move_16')">Position 16</button>
-        </div>
-        <div>
-            <h2>Status</h2>
-            <pre id="status">Waiting for connection...</pre>
-        </div>
+
+    <h1>ロボットの位置表示</h1>
+
+    <div class="position-container">
+        <p>X座標: <span id="position_x">0</span></p>
+        <p>Y座標: <span id="position_y">0</span></p>
+        <p>向き: <span id="direction">0</span>°</p>
     </div>
+
+    <div class="map" id="map">
+        <div class="robot" id="robot"></div>
+    </div>
+
+    <div class="buttons">
+        <button class="btn btn-start-left" onclick="setStartPosition('left')">左下スタート</button>
+        <button class="btn btn-start-right" onclick="setStartPosition('right')">右下スタート</button>
+        <button class="btn btn-send-start" onclick="sendStartCommand()">START</button>
+    </div>
+
     <script>
-        const ws = new WebSocket('ws://' + window.location.hostname + ':8080/ws');
-        let currentCommand = '';
+        let ws;
+        let position_x = 0, position_y = 0, direction = 0;
+        let startPosition = "right";  // デフォルトは右下
+        const robot = document.getElementById("robot");
+        const posXElement = document.getElementById("position_x");
+        const posYElement = document.getElementById("position_y");
+        const directionElement = document.getElementById("direction");
+        const map = document.getElementById("map");
 
-        ws.onopen = () => {
-            document.getElementById('status').textContent = 'Connected';
-            setInterval(() => {
-                if (currentCommand) {
-                    ws.send(currentCommand);
-                }
-            }, 1);
-        };
+        // WebSocket接続
+        function connectWebSocket() {
+            ws = new WebSocket("ws://192.168.75.216:8080/ws");
 
-        ws.onmessage = (event) => {
-            document.getElementById('status').textContent = event.data;
-        };
+            ws.onopen = () => console.log("WebSocket接続成功");
+            ws.onerror = (error) => console.error("WebSocketエラー", error);
+            ws.onclose = () => {
+                console.log("WebSocket切断 - 再接続を試みます...");
+                setTimeout(connectWebSocket, 1000); // 1秒後に再接続
+            };
 
-        ws.onclose = () => {
-            document.getElementById('status').textContent = 'Disconnected';
-        };
-
-        function toggleButton(button, command) {
-            const buttons = document.querySelectorAll('.button');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            currentCommand = command;
+            ws.onmessage = function (event) {
+                const dataArray = event.data.split(",");
+                position_x = clamp(parseInt(dataArray[0]), 0, 1000);
+                position_y = clamp(parseInt(dataArray[1]), 0, 1000);
+                direction = 90 - parseInt(dataArray[2]);
+                updateRobotPosition();
+            };
         }
+
+        // 送信コマンド (START)
+        function sendStartCommand() {
+            if (ws && ws.readyState === WebSocket.OPEN) {
+                ws.send("START");
+                console.log("START コマンド送信");
+            } else {
+                console.warn("WebSocket未接続 - STARTコマンドを送信できません");
+            }
+        }
+
+        // スタート位置設定
+        function setStartPosition(position) {
+            startPosition = position;
+            updateRobotPosition(); // スタート位置を即時反映
+        }
+
+        // ロボットの位置更新
+        function updateRobotPosition() {
+            let mapSize = map.clientWidth;
+            let scale = mapSize / 1000;
+
+            if (startPosition === "right") {
+                robot.style.left = `${mapSize - position_x * scale}px`;
+            } else {
+                robot.style.left = `${position_x * scale}px`;
+            }
+
+            robot.style.top = `${mapSize - position_y * scale}px`;
+            robot.style.transform = `rotate(${direction}deg)`;
+
+            // 表示更新
+            posXElement.innerHTML = position_x;
+            posYElement.innerHTML = position_y;
+            directionElement.innerHTML = direction;
+        }
+
+        // 値を範囲内に収める関数
+        const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+
+        // 画面リサイズ時に再描画
+        window.addEventListener("resize", updateRobotPosition);
+
+        connectWebSocket();
     </script>
+
 </body>
+
 </html>
